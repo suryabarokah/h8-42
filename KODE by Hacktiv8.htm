@@ -1,0 +1,2554 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/14933323-numpy -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="https://cdn.thinkific.com/" rel="preconnect">
+<link crossorigin="true" href="https://fonts.gstatic.com/" rel="preconnect">
+<link rel="preload" href="./KODE by Hacktiv8_files/vendor-f1f4185f6f6a42779ce1d77901b79979.js" as="script" crossorigin="">
+<link rel="preload" href="./KODE by Hacktiv8_files/course-player-v2-4f911c629dbb39b06c3cb741fa8ec94d.js" as="script" crossorigin="">
+<link rel="preload" href="./KODE by Hacktiv8_files/vendor-e0cb822bbe090c173fe20baeb13b0c48.css" as="style" crossorigin="">
+<link rel="preload" href="./KODE by Hacktiv8_files/course-player-v2-faf23de0b78209c305d5b3ed83f160d4.css" as="style" crossorigin="">
+
+
+
+
+<script src="./KODE by Hacktiv8_files/325782605039499" async=""></script><script async="" src="./KODE by Hacktiv8_files/fbevents.js"></script><script src="./KODE by Hacktiv8_files/93a359c32d8649729d629561ea7a2d89f169ac2771bd4ef5b31ac567ae8cfb9a" type="text/javascript" async=""></script><script type="text/javascript" async="" src="./KODE by Hacktiv8_files/analytics.js"></script><script async="" src="./KODE by Hacktiv8_files/gtm.js"></script><script async="" src="./KODE by Hacktiv8_files/analytics.js"></script><script>
+  window.Thinkific = window.Thinkific || {};
+  window.Thinkific.current_user = {"id":31790287,"first_name":"Surya","last_name":"Barokah","email":"barokah.surya@work.bri.co.id","external_source":null,"subdomain":"hacktiv8-ptp","full_name":"Surya Barokah","created_at":1603197299,"last_sign_in_at":1603197299,"number_courses_complete":0,"external_id":null,"tenant_id":236035,"groups":[]};
+</script>
+
+<title>KODE by Hacktiv8</title>
+
+
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link href="./KODE by Hacktiv8_files/css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" type="image/x-icon" href="https://s3.amazonaws.com/thinkific-import/236035/dghlKaiYRO6j6pZMJBaw_favicon.ico">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="deYXA774HiCeP8O43KPMiOVi8Ndq5ROp7mXmDzrKh5QHcKMxDWfH8pJ+sRVfnii6ohVjoytWiBxkMcfMq3Synw==">
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  let thinkific_google_analytics_disabled = ""
+  if (!thinkific_google_analytics_disabled) {
+    var tcd = "thinkific.com";
+    ga('create', 'UA-30557184-1', 'auto', { 'cookieDomain': tcd });
+    ga('send', 'pageview');
+  }
+  
+  var tenantGoogleAnalyticsKey = "";
+  
+  if(tenantGoogleAnalyticsKey) {
+    var tenantCD = "www.kode.id";
+    ga('create', tenantGoogleAnalyticsKey, 'auto', { 'name': 'tenantTracker', 'cookieDomain': tenantCD });
+    ga('tenantTracker.send', 'pageview');
+  }
+</script>
+
+
+
+<link href="./KODE by Hacktiv8_files/toga-icons.css" rel="stylesheet" type="text/css">
+<link href="./KODE by Hacktiv8_files/toga-product-icons.css" rel="stylesheet" type="text/css">
+<meta name="kobayashi" content="f37013223a27d1b755e3d2b599b61dd835e3d53e">
+<link rel="stylesheet" media="all" href="./KODE by Hacktiv8_files/froala-v2-custom-theme-ce387945bbe5675a3124139056696f51721f6c75bc13a83788dad8e2826ab00e.css">
+<link rel="stylesheet" href="./KODE by Hacktiv8_files/vendor-e0cb822bbe090c173fe20baeb13b0c48.css">
+<link rel="stylesheet" href="./KODE by Hacktiv8_files/course-player-v2-faf23de0b78209c305d5b3ed83f160d4.css">
+<meta name="description" content="Introduction to Python for Data Science - KODE by Hacktiv8">
+<style>
+  
+</style>
+</head>
+<body id="courses" class="take hacktiv8-ptp-tenant  course-id-749727" cz-shortcut-listen="true"><noscript>
+<style>
+  body {
+    height: 100vh;
+    max-width: 100vw;
+    margin: 0;
+  }
+  #wrap {
+    display: none;
+  }
+  .noscript-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #eee;
+  }
+  .noscript-container i {
+    font-size: 50px;
+  }
+  .noscript-container h3 {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  .noscript-container p {
+    font-size: 16px;
+    color: #929292;
+  }
+  .noscript-container a {
+    color: #1b9eea;
+  }
+  .noscript-container a.btn,
+  .noscript-container a.btn:visited {
+    padding: 8px 20px;
+    margin-top: 20px;
+    border: 1px solid #929292;
+    border-radius: 3px;
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+  }
+  .noscript-container a.btn:hover {
+    background-color: #e6e6e6;
+  }
+</style>
+<div class='noscript-container'>
+<i class='icon-settings'></i>
+<h3>The content is here but you need to enable JavaScript to view it.</h3>
+<p>Please <a rel= "noreferrer noopener" target="_blank" href="https://www.enable-javascript.com">enable JavaScript</a> in your browser settings and reload the page.</p>
+<a class="btn" href="">Reload page</a>
+</div>
+</noscript>
+
+<div id="wrap">
+<div id="data-store">
+<input id="CourseSlug" type="hidden" value="hacktiv8-pytn2-0">
+</div>
+<div id="page-content" class="ember-application"><div id="modal-overlays"></div><div id="ember393" class="ember-view"><!----><!---->  <link href="./KODE by Hacktiv8_files/css(1)" rel="stylesheet">
+
+<style>
+  body,
+  button,
+  input,
+  textarea {
+    font-family:Open Sans;
+  }
+  [data-theme] .brand-color__background {
+    background-color:#e65856;
+  }
+
+  [data-theme] .brand-color__text {
+    color:#e65856;
+  }
+
+  [data-theme] .brand-color__dynamic-text {
+    color:#ffffff;
+  }
+
+  [data-theme] .brand-color__fill {
+    fill:#e65856;
+  }
+
+  [data-theme] .brand-color__border {
+    border-color:#e65856;
+  }
+
+  [data-theme] .brand-color__border-60-opacity {
+    border-color:rgba(230, 88, 86, 0.6);
+  }
+
+  [data-theme] .brand-color__border-60-opacity:not([disabled]):hover {
+    border-color:#e65856;
+  }
+
+  [data-theme] .brand-color__background-30-opacity:not([disabled]):hover {
+    background-color:rgba(230, 88, 86, 0.3);
+  }
+
+  .course-player__content-item .toga-icon-checkmark::before {
+    color:#ffffff !important;
+  }
+
+  .course-player__chapter-item__header .toga-icon-checkmark::before {
+    color:#ffffff !important;
+  }
+</style>
+
+  <div class="skip-link">
+    <a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/14933323-numpy#main-content" class="skip-link__anchor">Skip to main content</a>
+  </div>
+  <div data-theme="light-theme" id="player-wrapper" class="_course__theme-wrapper_n1vbpj">
+    <div id="ember625" class="course-player__language-bar  ember-view"><!----></div>
+      <header class="course-player__top-bar brand-color__background  _top-bar_n1vbpj">
+        <div class="_container_v3q4ce">
+  <button aria-label="Enable menu" class="course-player__top-bar__menu-toggle brand-color__dynamic-text _top-bar__menu-toggle_v3q4ce" data-ember-action="" data-ember-action-644="644">
+    <span class="course-player__top-bar__menu-toggle__bar _top-bar__menu-toggle__bar_v3q4ce"></span>
+    <span class="course-player__top-bar__menu-toggle__bar _top-bar__menu-toggle__bar_v3q4ce"></span>
+    <span class="course-player__top-bar__menu-toggle__bar _top-bar__menu-toggle__bar_v3q4ce"></span>
+  </button>
+
+  <div class="top-bar__dashboard-link _top-bar__dashboard-link_v3q4ce">
+      <a href="https://www.kode.id/enrollments" class="top-bar__dashboard-link__anchor brand-color__dynamic-text">
+        <i aria-hidden="true" class="top-bar__dashboard-link__icon toga-icon toga-icon-caret-stroke-left brand-color__dynamic-text"></i>
+        Kembali ke Dashboard
+      </a>
+  </div>
+  <section class="course-player__top-bar__branding _top-bar__branding_v3q4ce">
+      <div class="_logo__container_v3q4ce">
+        <img src="./KODE by Hacktiv8_files/1587702886996LogoKode2020light.png" alt="KODE by Hacktiv8" class="course-player__top-bar__logo _top-bar__logo_v3q4ce">
+      </div>
+      <h1 class="sr-only">KODE by Hacktiv8</h1>
+  </section>
+<!----></div>
+
+      </header>
+      <div class="course-player      _course-player_n1vbpj">
+
+        <nav class="course-player__left-drawer _left-drawer_n1vbpj">
+          <div class="course-player__course-navigation _course-navigation_t2nzf7">
+
+  <div id="ember659" class="ember-view"><section class="course-progress__container _course-progress__container_1rtg53">
+<section class="surface__container _surface__container_1yatsw _surface--default_1yatsw">
+      <div class="course-progress__school-name brand-color__background _course-progress__school-name_1rtg53">
+      <div class="_container_v3q4ce">
+  <button aria-label="Enable menu" class="course-player__top-bar__menu-toggle brand-color__dynamic-text _top-bar__menu-toggle_v3q4ce" data-ember-action="" data-ember-action-668="668">
+    <span class="course-player__top-bar__menu-toggle__bar _top-bar__menu-toggle__bar_v3q4ce"></span>
+    <span class="course-player__top-bar__menu-toggle__bar _top-bar__menu-toggle__bar_v3q4ce"></span>
+    <span class="course-player__top-bar__menu-toggle__bar _top-bar__menu-toggle__bar_v3q4ce"></span>
+  </button>
+
+  <div class="top-bar__dashboard-link _top-bar__dashboard-link_v3q4ce">
+      <a href="https://www.kode.id/enrollments" class="top-bar__dashboard-link__anchor brand-color__dynamic-text">
+        <i aria-hidden="true" class="top-bar__dashboard-link__icon toga-icon toga-icon-caret-stroke-left brand-color__dynamic-text"></i>
+        Kembali ke Dashboard
+      </a>
+  </div>
+  <section class="course-player__top-bar__branding _top-bar__branding_v3q4ce">
+      <div class="_logo__container_v3q4ce">
+        <img src="./KODE by Hacktiv8_files/1587702886996LogoKode2020light.png" alt="KODE by Hacktiv8" class="course-player__top-bar__logo _top-bar__logo_v3q4ce">
+      </div>
+      <h1 class="sr-only">KODE by Hacktiv8</h1>
+  </section>
+<!----></div>
+
+    </div>
+    <div class="course-progress__inner-container _course-progress__inner-container_1rtg53">
+      <a href="https://www.kode.id/enrollments" class="course-progress__dashboard-link _course-progress__dashboard-link_1rtg53">Kembali ke Dashboard</a>
+      <h2 class="course-progress__title _course-progress__title_1rtg53">Introduction to Python for Data Science</h2>
+      <div class="_course-progress__actions-container_1rtg53">
+        <div class="_course-progress__progress-bar__container_1rtg53">
+          <div style="width:22%;" class="brand-color__background _course-progress__progress-bar__inner_1rtg53"></div>
+        </div>
+        <p class="course-progress__percent-complete _course-progress__percent-complete_1rtg53"><span>22%</span> complete</p>
+<!---->      </div>
+    </div>
+
+</section>
+</section>
+</div>
+
+  <div id="ember689" class=" ember-view"><div class="course-player__user-search _container_56qan">
+<div id="ember711" class="ember-basic-dropdown ember-view">
+<div aria-owns="ember-basic-dropdown-content-ember711" tabindex="0" data-ebd-id="ember711-trigger" role="button" id="ember716" class="ember-power-select-trigger ember-basic-dropdown-trigger ember-basic-dropdown-trigger--in-place ember-view">    <span class="ember-power-select-placeholder">Search by lesson title</span>
+
+<span class="ember-power-select-status-icon"></span>
+</div>
+  <div id="ember-basic-dropdown-content-ember711" style="display: none;" class="ember-basic-dropdown-content-placeholder"></div>
+
+</div>
+  <div id="user-content-search-power-select" class="course-player__user-search--power-select"></div>
+</div>
+</div>
+
+  <div role="navigation" aria-label="Chapters" class="course-player__chapters-menu ">
+    <ul id="ember744" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="100" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h3 class="_chapter-item__title_d57kmg">Sesi 1</h3>
+
+<!---->
+      <span class="sr-only">Completed</span>
+
+    <span aria-hidden="true" class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      6 / 6
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-764="764">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/16556258-welcome" id="ember769" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Welcome!
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-787="787">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/presentations/16559646-anaconda-installation" id="ember788" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Anaconda Installation
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-presentation _content-item__type-icon_nffvg8"></i>
+          Presentation
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-806="806">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/14932265-pengenalan-python" id="ember807" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Pengenalan Python
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-818="818">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17146891-gittoday" id="ember819" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      gitToday
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-826="826">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17146892-tipspy" id="ember827" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      TipsPy
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-834="834">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17009702-chapter-feedback" id="ember835" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Chapter Feedback
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</ul>
+    <ul id="ember841" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="100" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h3 class="_chapter-item__title_d57kmg">Sesi 2</h3>
+
+<!---->
+      <span class="sr-only">Completed</span>
+
+    <span aria-hidden="true" class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      4 / 4
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-853="853">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/14933219-percabangan-dan-perulangan" id="ember854" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Percabangan dan Perulangan
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-865="865">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/16625541-gittoday" id="ember866" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      gitToday
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-873="873">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/16625945-tipspy" id="ember874" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      TipsPy
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-881="881">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17009707-chapter-feedback" id="ember882" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Chapter Feedback
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</ul>
+    <ul id="ember888" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all" role="tab" id="ui-id-5" aria-controls="ui-id-6" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="100" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h3 class="_chapter-item__title_d57kmg">Sesi 3</h3>
+
+<!---->
+      <span class="sr-only">Completed</span>
+
+    <span aria-hidden="true" class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      4 / 4
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-6" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-896="896">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/14933314-function-module-dan-package" id="ember897" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Function, Module, dan Package
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-908="908">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/16625548-gittoday" id="ember909" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      gitToday
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-916="916">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/16626011-tipspy" id="ember917" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      TipsPy
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--complete _content-item_nffvg8" data-ember-action="" data-ember-action-924="924">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17009710-chapter-feedback" id="ember925" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Chapter Feedback
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</ul>
+    <ul id="ember927" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-active ui-state-active" role="tab" id="ui-id-7" aria-controls="ui-id-8" aria-selected="true" aria-expanded="true" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="0" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h3 class="_chapter-item__title_d57kmg">Sesi 4</h3>
+
+<!---->
+<!---->
+    <span aria-hidden="true" class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      0 / 4
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active" id="ui-id-8" aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="false" style="">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li class="course-player__content-item released content-item__progress--active _content-item_nffvg8" data-ember-action="" data-ember-action-935="935">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/14933323-numpy" id="ember936" class="course-player__content-item__link _content-item__link_nffvg8 active ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i aria-hidden="true" class="content-item__progress-icon content-item__progress-icon--circle--active course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      NumPy
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-943="943">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/16625986-gittoday" id="ember944" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i aria-hidden="true" class="content-item__progress-icon content-item__progress-icon--circle course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      gitToday
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-947="947">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/16846217-tipspy" id="ember948" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i aria-hidden="true" class="content-item__progress-icon content-item__progress-icon--circle course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      TipsPy
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-951="951">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17009771-chapter-feedback" id="ember952" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8">
+        <i aria-hidden="true" class="content-item__progress-icon content-item__progress-icon--circle course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Chapter Feedback
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</ul>
+    <ul id="ember954" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-9" aria-controls="ui-id-10" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="0" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h3 class="_chapter-item__title_d57kmg">Sesi 5</h3>
+
+<!---->
+<!---->
+    <span aria-hidden="true" class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      0 / 4
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-10" aria-labelledby="ui-id-9" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-962="962">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/14933351-pandas-introduction" id="ember963" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Pandas Introduction
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-970="970">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/16626240-gittoday" id="ember971" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      gitToday
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-974="974">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/16980935-tipspy" id="ember975" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      TipsPy
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-978="978">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17009775-chapter-feedback" id="ember979" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Chapter Feedback
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</ul>
+    <ul id="ember981" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-11" aria-controls="ui-id-12" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="0" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h3 class="_chapter-item__title_d57kmg">Sesi 6</h3>
+
+<!---->
+<!---->
+    <span aria-hidden="true" class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      0 / 4
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-12" aria-labelledby="ui-id-11" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-989="989">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/14933365-eda-with-pandas" id="ember990" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      EDA with Pandas
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-997="997">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/16626353-gittoday" id="ember998" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      gitToday
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1001="1001">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17013071-tipspy" id="ember1002" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      TipsPy
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1005="1005">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17009783-chapter-feedback" id="ember1006" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Chapter Feedback
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</ul>
+    <ul id="ember1008" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-13" aria-controls="ui-id-14" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="0" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h3 class="_chapter-item__title_d57kmg">Sesi 7</h3>
+
+<!---->
+<!---->
+    <span aria-hidden="true" class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      0 / 4
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-14" aria-labelledby="ui-id-13" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1016="1016">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/14933409-visualisasi-dasar" id="ember1017" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Visualisasi Dasar
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1024="1024">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/16626357-gittoday" id="ember1025" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      gitToday
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1028="1028">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17021395-tipspy" id="ember1029" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      TipsPy
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1032="1032">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17009786-chapter-feedback" id="ember1033" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Chapter Feedback
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</ul>
+    <ul id="ember1035" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-15" aria-controls="ui-id-16" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="0" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h3 class="_chapter-item__title_d57kmg">Sesi 8</h3>
+
+<!---->
+<!---->
+    <span aria-hidden="true" class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      0 / 6
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-16" aria-labelledby="ui-id-15" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1043="1043">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/16593751-visualisasi-menengah-1" id="ember1044" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Visualisasi Menengah 1
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1051="1051">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17152276-visualisasi-menengah-2" id="ember1052" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Visualisasi Menengah 2
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1059="1059">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17202253-gittoday" id="ember1060" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      gitToday
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1063="1063">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17202256-tipspy" id="ember1064" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      TipsPy
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1067="1067">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/assignments/17201115-assignment-python-1" id="ember1068" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Assignment Python 1
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-assignment _content-item__type-icon_nffvg8"></i>
+          Assignment
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1093="1093">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17009792-chapter-feedback" id="ember1094" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Chapter Feedback
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</ul>
+    <ul id="ember1096" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-17" aria-controls="ui-id-18" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="0" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h3 class="_chapter-item__title_d57kmg">Sesi 9</h3>
+
+<!---->
+<!---->
+    <span aria-hidden="true" class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      0 / 4
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-18" aria-labelledby="ui-id-17" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1104="1104">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/14933483-descriptive-statistics" id="ember1105" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Descriptive Statistics
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1112="1112">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17217433-gittoday" id="ember1113" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      gitToday
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1116="1116">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/lessons/17217963-python-from-home" id="ember1117" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Python from Home
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-video _content-item__type-icon_nffvg8"></i>
+          Video
+            <span class="content-item__metadata text-capitalize">&nbsp;· 6 min</span>
+            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1137="1137">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17009797-chapter-feedback" id="ember1138" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Chapter Feedback
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</ul>
+    <ul id="ember1140" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-19" aria-controls="ui-id-20" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="0" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h3 class="_chapter-item__title_d57kmg">Sesi 10</h3>
+
+<!---->
+<!---->
+    <span aria-hidden="true" class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      0 / 5
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-20" aria-labelledby="ui-id-19" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1148="1148">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/14933487-inferential-statistics" id="ember1149" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Inferential Statistics
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1156="1156">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17217466-gittoday" id="ember1157" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      gitToday
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1160="1160">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/lessons/17218056-python-from-home" id="ember1161" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Python from Home
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-video _content-item__type-icon_nffvg8"></i>
+          Video
+            <span class="content-item__metadata text-capitalize">&nbsp;· &lt; 1 min</span>
+<!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1164="1164">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/assignments/17217512-assignment-python-2" id="ember1165" class="course-player__content-item__link _content-item__link_nffvg8 ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Assignment Python 2
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-assignment _content-item__type-icon_nffvg8"></i>
+          Assignment
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1168="1168">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17041919-chapter-feedback" id="ember1169" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Chapter Feedback
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</ul>
+    <ul id="ember1171" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-21" aria-controls="ui-id-22" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="0" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h3 class="_chapter-item__title_d57kmg">Sesi 11</h3>
+
+<!---->
+<!---->
+    <span aria-hidden="true" class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      0 / 4
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-22" aria-labelledby="ui-id-21" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1179="1179">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17624178-introduction-to-machine-learning" id="ember1180" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Introduction to Machine Learning
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1187="1187">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/14933496-regression-models" id="ember1188" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Regression Models
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1195="1195">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17616612-gittoday" id="ember1196" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      gitToday
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1199="1199">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17041922-chapter-feedback" id="ember1200" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Chapter Feedback
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</ul>
+    <ul id="ember1202" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-23" aria-controls="ui-id-24" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="0" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h3 class="_chapter-item__title_d57kmg">Sesi 12</h3>
+
+<!---->
+<!---->
+    <span aria-hidden="true" class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      0 / 3
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-24" aria-labelledby="ui-id-23" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1210="1210">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/14933499-classification-1" id="ember1211" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Classification 1
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1218="1218">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17624186-gittoday" id="ember1219" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      gitToday
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1222="1222">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17041924-chapter-feedback" id="ember1223" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Chapter Feedback
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</ul>
+    <ul id="ember1225" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-25" aria-controls="ui-id-26" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="0" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h3 class="_chapter-item__title_d57kmg">Sesi 13</h3>
+
+<!---->
+<!---->
+    <span aria-hidden="true" class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      0 / 3
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-26" aria-labelledby="ui-id-25" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1233="1233">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/14933507-classification-2" id="ember1234" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Classification 2
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1241="1241">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/16553398-assignment" id="ember1242" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Assignment
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1245="1245">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17041927-chapter-feedback" id="ember1246" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Chapter Feedback
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</ul>
+    <ul id="ember1248" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-27" aria-controls="ui-id-28" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="0" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h3 class="_chapter-item__title_d57kmg">Sesi 14</h3>
+
+<!---->
+<!---->
+    <span aria-hidden="true" class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      0 / 2
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-28" aria-labelledby="ui-id-27" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1256="1256">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/14933513-unsupervised" id="ember1257" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Unsupervised
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1264="1264">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17041929-chapter-feedback" id="ember1265" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Chapter Feedback
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</ul>
+    <ul id="ember1267" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-29" aria-controls="ui-id-30" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="0" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h3 class="_chapter-item__title_d57kmg">Sesi 15</h3>
+
+<!---->
+<!---->
+    <span aria-hidden="true" class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      0 / 2
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-30" aria-labelledby="ui-id-29" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1275="1275">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/14933517-model-deployment" id="ember1276" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Model Deployment
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!---->            <span class="_content-item__separator_nffvg8">·</span>
+          <span class="content-item__prerequisite-label">
+            PREREQUISITE
+          </span>
+<!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1283="1283">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17041930-chapter-feedback" id="ember1284" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Chapter Feedback
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</ul>
+    <ul id="ember1286" class="course-player__chapters-item _chapters-item_1tqvoe ember-view ui-accordion ui-widget ui-helper-reset" role="tablist"><div class="course-player__chapter-item__header _chapter-item__header_d57kmg ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-31" aria-controls="ui-id-32" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+  <div class="course-player__chapter-item__container _chapter-item__container_d57kmg">
+    <span class="course-player__progress _chapter-item__progress_d57kmg">
+      <span data-percentage-completion="0" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" class="_chapter-item__progress-ring_d57kmg">
+        <span class="progress-ring__ring _progress-ring__ring_jgsecr">
+	<span class="progress-ring__mask progress-ring--full _progress-ring__mask_jgsecr _progress-ring--full_jgsecr">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+	</span>
+	<span class="progress-ring__mask progress-ring--half _progress-ring__mask_jgsecr ">
+		<span class="progress-ring--fill brand-color__background _progress-ring--fill_jgsecr"></span>
+		<span class="progress-ring--fill progress-ring--fix _progress-ring--fill_jgsecr _progress-ring--fix_jgsecr"></span>
+	</span>
+</span>
+<span class="progress-ring__ring-inset _progress-ring__ring-inset_jgsecr"></span>
+<span class="progress-ring__checkmark brand-color__text _progress-ring__checkmark_jgsecr"><i role="img" aria-label="Completed" class="toga-icon toga-icon-checkmark"></i></span>
+
+      </span>
+    </span>
+
+    <h3 class="_chapter-item__title_d57kmg">Sesi 16</h3>
+
+<!---->
+<!---->
+    <span aria-hidden="true" class="course-player__chapter-item__completion _chapter-item__completion_d57kmg">
+      0 / 2
+    </span>
+
+    <span class="course-player__chapter-item__toggle _chapter-item__toggle_d57kmg">
+      <i aria-hidden="true" class="chapter-item__toggle-icon toga-icon toga-icon-caret-stroke-down _chapter-item__toggle-icon_d57kmg"></i>
+    </span>
+  </div>
+</div>
+<div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-32" aria-labelledby="ui-id-31" role="tabpanel" aria-hidden="true" style="display: none;">
+  <ul class="course-player__chapter-item__contents _chapter-item__contents_d57kmg">
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1294="1294">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/13039701-final-project" id="ember1295" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Final Project
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+      <li class="course-player__content-item released content-item__progress--incomplete _content-item_nffvg8" data-ember-action="" data-ember-action-1298="1298">
+<a href="https://www.kode.id/courses/take/hacktiv8-pytn2-0/texts/17041986-course-feedback" id="ember1299" class="course-player__content-item__link _content-item__link_nffvg8 ember-transitioning-in ember-view">    <div class="brand-color__text _content-item__progress_nffvg8 _blocked_nffvg8">
+        <i aria-hidden="true" class="toga-icon toga-icon-circle-fill-dash course-player__content-item__progress-icon _content-item__progress-icon_nffvg8"></i>
+    </div>
+    <div class="content-item__title _content-item__title_nffvg8">
+      Course Feedback
+      <div class="content-item__details _content-item__details_nffvg8">
+            <i aria-hidden="true" class="toga-icon toga-icon-content-text _content-item__type-icon_nffvg8"></i>
+          Text
+<!----><!----><!----><!---->      </div>
+    </div>
+</a></li>
+  </ul>
+</div>
+</ul>
+</div>
+
+
+</div>
+
+          <!---->
+        </nav>
+
+        <main id="main-content" tabindex="-1" class="course-player__content _content_n1vbpj">
+<section class="surface__container _surface__container_1yatsw _surface--content_1yatsw">
+              <div class="_content-surface_n1vbpj">
+                <div class="course-player__content-header _content-header__container_h7ytgy">
+  <div class="_content-header__title-container_h7ytgy">
+        <h2 class="course-player__content-header__title _content-header__title_h7ytgy">NumPy</h2>
+  </div>
+  <div class="course-player__content-header__actions _content-header__actions_h7ytgy">
+<!----><!---->
+    <button class="course-player__content-header__action-fullscreen _content-header__action-fullscreen_h7ytgy" data-ember-action="" data-ember-action-1309="1309">
+        <span class="sr-only">Enable fullscreen</span>
+        <i aria-hidden="true" class="toga-icon toga-icon-arrow-grow"></i>
+    </button>
+  </div>
+</div>
+
+
+              <div class="content-modal-wrapper _content-modal-wrapper_n1vbpj" style="position: relative; overflow: hidden;">
+<!---->
+<!---->
+                <section id="content-inner" class="course-player__content-inner _content-inner_n1vbpj">
+<!---->
+                  
+                  <div class="course-player__html-item _html-item__container_1vr68b">
+  <div id="ember1634" class="ember-view"><!----></div>
+
+  <div id="ember1635" class="ember-view"><div class="custom-theme">
+  <div class="fr-view">
+    <div class="fr-view"><p><title>s4.md</title></p><style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style><style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style><style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"></div> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style><script src="./KODE by Hacktiv8_files/mermaid.min.js"></script><script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script><h1 align="center">Hacktiv8-PTP Python For Data Science // S.4 // Numpy</h1><h2 id="numpy-introduction">Numpy Introduction</h2><p>NumPy (<strong>Num</strong>erical <strong>Py</strong>thon) adalah pustaka Python open-source yang digunakan di hampir semua bidang sains dan teknik. NumPy adalah standar universal untuk bekerja dengan data numerik menggunakan Python, dan merupakan inti dari ekosistem ilmiah Python dan PyData. Pengguna NumPy mencakup semua orang mulai dari coders &nbsp;hingga peneliti berpengalaman yang melakukan penelitian dan pengembangan ilmiah dan industri mutakhir.</p><p>API NumPy digunakan secara luas di Pandas, SciPy, Matplotlib, scikit-learn, scikit-image, dan sebagian besar packages data science dan scientific Python lainnya.</p><p>Pustaka NumPy berisi larik multidimensi (multidimensional array) dan struktur data matriks (kalianakan menemukan informasi selengkapnya tentang hal ini di bagian selanjutnya). NumPy menyediakan ndarray, objek array n-dimensi yang homogen, dengan metode untuk mengoperasikannya secara efisien. NumPy dapat digunakan untuk melakukan berbagai operasi matematika pada array. NumPy menambahkan struktur data yang kuat ke Python yang menjamin penghitungan yang efisien dengan array dan matriks dan menyediakan perpustakaan besar fungsi matematika tingkat tinggi yang beroperasi pada array dan matriks ini.</p><p><strong>Installing NumPy</strong></p><p>Kalian dapat menginstal NumPy dengan:</p><p><code>conda install numpy</code></p><p>atau</p><p><code>pip install numpy</code></p><p><strong>How to import NumPy</strong></p><p>Kapan pun kalian ingin menggunakan package atau library dalam kode kalian, kalian harus membuatnya dapat diakses terlebih dahulu.<br><br>Untuk mulai menggunakan NumPy dan semua fungsi yang tersedia di NumPy, kalian perlu mengimpornya. Ini dapat dengan mudah dilakukan dengan pernyataan impor ini:</p><blockquote><p><strong><code>import numpy as np</code></strong></p></blockquote><p>(Kita mempersingkat "numpy" menjadi "np" untuk menghemat waktu dan juga untuk menjaga kode tetap standar sehingga siapa pun yang bekerja dengan kode kalian dapat dengan mudah memahami dan menjalankannya.)</p><p><strong>Why use NumPy?</strong></p><p>Array NumPy lebih cepat dan lebih compact daripada List Python. Sebuah array mengkonsumsi lebih sedikit memori dan jauh lebih convenient untuk digunakan. NumPy menggunakan lebih sedikit memori untuk menyimpan data dan menyediakan mekanisme untuk menentukan tipe data, yang memungkinkan kode untuk dioptimalkan lebih jauh.</p><h2 id="terminology">Terminology</h2><p><strong>What is an array?</strong></p><p><span lang="id"><span title="">Array adalah struktur data central dari perpustakaan NumPy.</span> <span lang="id"><span title="">Array&nbsp;</span></span><span title="">adalah grid of values dan berisi informasi tentang data mentah, cara menemukan elemen, dan cara menginterpretasikan elemen.</span> <span lang="id"><span lang="id"><span title="">Array&nbsp;</span></span></span><span title="">memiliki grid elemen yang dapat diindeks dengan berbagai cara.</span> <span title="">Semua elemen memiliki tipe yang sama, disebut sebagai <span lang="id"><span title="">array&nbsp;</span></span>dtype(data type).</span></span></p><p>Sebuah array dapat diindeks oleh tuple dari bilangan bulat nonnegatif, dengan boolean, oleh array lain, atau dengan bilangan bulat. Rank dari array adalah jumlah dimensi. Shape dari array adalah tuple bilangan bulat yang memberikan ukuran array di setiap dimensi.</p><p>Salah satu cara kita dapat menginisialisasi array NumPy adalah dari nested Python lists.</p><p><code>a = np.array([[1 , 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])</code></p><p>Kita dapat mengakses elemen dalam array menggunakan tanda kurung siku. Saat kalian mengakses elemen, ingatlah bahwa pengindeksan di NumPy dimulai dari 0. Artinya, jika kalian ingin mengakses elemen pertama dalam array, kalian akan mengakses elemen "0".</p><p><code>print(a[0])</code></p><p>Output:</p><p><code>[1 2 3 4]</code></p><p>More information</p><blockquote><p>1D array, 2D array, ndarray, vector, matrix</p></blockquote><p>Kalian mungkin sesekali mendengar array yang disebut sebagai "ndarray", yang merupakan singkatan dari "N-dimensional array.". Array berdimensi-N hanyalah array dengan sejumlah dimensi. Kalian mungkin juga mendengar array 1-D, atau array satu dimensi, 2-D, atau array dua dimensi, dan seterusnya. Kelas ndarray NumPy digunakan untuk merepresentasikan matriks dan vektor. Vektor adalah array dengan satu kolom, sedangkan matriks mengacu pada array dengan banyak kolom.</p><p><strong>What are the attributes of an array?</strong></p><p>Array biasanya merupakan fixed-size container of items dengan jenis dan ukuran yang sama. Jumlah dimensi dan item dalam array ditentukan oleh bentuknya. Bentuk array adalah tuple bilangan bulat non-negatif yang menentukan ukuran setiap dimensi.</p><p>Dalam NumPy, dimensi disebut axes. Artinya jika kalian memiliki array 2D yang terlihat seperti ini:</p><pre class="hljs"><code><div>[[<span class="hljs-number">0.</span>, <span class="hljs-number">0.</span>, <span class="hljs-number">0.</span>],
+ [<span class="hljs-number">1.</span>, <span class="hljs-number">1.</span>, <span class="hljs-number">1.</span>]]</div></code></pre><p>Array kalian memiliki 2 axes. Axis pertama memiliki panjang 2 dan axis kedua memiliki panjang 3.</p><p>Sama seperti di objek kontainer Python lainnya, konten array dapat diakses dan dimodifikasi dengan mengindeks atau slicing array. Array yang berbeda bisa berbagi data yang sama, jadi perubahan yang dibuat pada satu array mungkin terlihat di array lain.</p><p>Array attributes mencerminkan informasi intrinsik ke array itu sendiri. Jika kalian perlu mendapatkan, atau bahkan menyetel, properti dari sebuah array tanpa membuat sebuah array baru, kalian sering kali dapat mengakses sebuah array melalui atributnya.</p><p><strong>What’s the difference between a Python list and a NumPy array?</strong></p><p>NumPy memberi kalian berbagai macam opsi terkait numerik yang cepat dan efisien. Meskipun List Python dapat berisi tipe data yang berbeda dalam satu daftar, semua elemen dalam array NumPy harus homogen. Operasi matematika yang dimaksudkan untuk dilakukan pada array tidak akan mungkin dilakukan jika array tidak homogen.</p><h2 id="array">Array</h2><h3 id="creating-array">Creating Array</h3><pre class="hljs"><code><div>np.array()
+np.zeros()
+np.ones()
+np.empty()
+np.arange()</div></code></pre><p>Untuk membuat array NumPy, kalian dapat menggunakan fungsi <code>np.array()</code>.</p><p>Yang perlu kalian lakukan untuk membuat array sederhana adalah dengan passing list ke dalamnya. Kalian juga dapat menentukan tipe data dalam List kalian.</p><pre class="hljs"><code><div><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+
+a = np.array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>])</div></code></pre><pre class="hljs"><code><div>a</div></code></pre><pre><code>array([1, 2, 3])
+</code></pre><p>Sering ada kasus ketika kita ingin NumPy menginisialisasi nilai array untuk kita. NumPy menyediakan metode seperti ones(), zeros(), dan lain-lain untuk kasus ini. Kitahanya memberikan mereka sejumlah elemen yang kita inginkan untuk di-generate:</p><pre class="hljs"><code><div><span class="hljs-comment"># you can easily create an array filled with 0s:</span>
+
+np.zeros(<span class="hljs-number">6</span>)</div></code></pre><pre><code>array([0., 0., 0., 0., 0., 0.])
+</code></pre><pre class="hljs"><code><div><span class="hljs-comment"># Or an array filled with 1s:</span>
+
+np.ones(<span class="hljs-number">6</span>)</div></code></pre><pre><code>array([1., 1., 1., 1., 1., 1.])
+</code></pre><pre class="hljs"><code><div><span class="hljs-comment"># Or even an empty array!</span>
+<span class="hljs-comment"># The function empty creates an array whose initial content is random and depends on the state of the memory.</span>
+
+np.empty(<span class="hljs-number">6</span>)</div></code></pre><pre><code>array([1., 1., 1., 1., 1., 1.])
+</code></pre><pre class="hljs"><code><div><span class="hljs-comment"># You can create an array with a range of elements</span>
+
+print(np.arange(<span class="hljs-number">4</span>))
+print(np.arange(<span class="hljs-number">0</span>,<span class="hljs-number">10</span>,<span class="hljs-number">2</span>)) <span class="hljs-comment"># (start, stop, step)</span></div></code></pre><pre><code>[0 1 2 3]
+[0 2 4 6 8]
+</code></pre><p>Apa yang dilakukan <code>arange([start],stop,[step])</code> adalah mengatur angka dari awal sampai berhenti. Inil adalah arti dari <code>np.arange(0,10,2)</code>:<br><br>list np mulai dari 0 hingga 10 tetapi jangan sertakan 10 dan buat angka tersebut melakukan kenaikan 2 setiap kali.<br><br>Hal penting yang perlu diingat di sini adalah bahwa angka berhenti (10) tidak akan dimasukkan dalam list. contoh lain:</p><pre class="hljs"><code><div>np.arange(<span class="hljs-number">2</span>,<span class="hljs-number">29</span>,<span class="hljs-number">5</span>)
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>array([ <span class="hljs-number">2</span>,  <span class="hljs-number">7</span>, <span class="hljs-number">12</span>, <span class="hljs-number">17</span>, <span class="hljs-number">22</span>, <span class="hljs-number">27</span>])</div></code></pre><h3 id="add-remove-and-sort">Add, Remove, and Sort</h3><pre class="hljs"><code><div>np.append()
+np.delete()
+np.sort()</div></code></pre><p>Jika kalian mulai dari array ini:</p><p><code>arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])</code></p><p>Kalian bisa menambahkan elemen ke array kalian kapan saja dengan <code>np.append().</code> Pastikan untuk menentukan array dan elemen yang ingin kalian sertakan.</p><pre class="hljs"><code><div>arr = np.array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>])</div></code></pre><pre class="hljs"><code><div>np.append(arr, [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>])</div></code></pre><pre><code>array([1, 2, 3, 4, 5, 6, 7, 8, 1, 2])
+</code></pre><p>Kalian bisa menghapus elemen dengan <code>np.delete()</code>. Jika kalian ingin menghapus elemen di posisi 1 dari array kalian, kalian dapat menjalankan:</p><pre class="hljs"><code><div>np.delete(arr, <span class="hljs-number">1</span>)</div></code></pre><pre><code>array([1, 3, 4, 5, 6, 7, 8])
+</code></pre><p>Mengurutkan elemen dapat dilakukan dengan <code>np.sort()</code>. Kalian dapat menentukan axis, jenis, dan urutan saat Anda memanggil fungsi.</p><p>Jika kalian mulai dari array ini:</p><pre class="hljs"><code><div>arr = np.array([<span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">5</span>, <span class="hljs-number">3</span>, <span class="hljs-number">7</span>, <span class="hljs-number">4</span>, <span class="hljs-number">6</span>, <span class="hljs-number">8</span>])</div></code></pre><p>Kalian dapat dengan cepat mengurutkan angka dalam urutan menaik dengan:</p><pre class="hljs"><code><div>np.sort(arr)</div></code></pre><pre><code>array([1, 2, 3, 4, 5, 6, 7, 8])
+</code></pre><h3 id="shape-and-size">Shape and Size</h3><pre class="hljs"><code><div>ndarray.ndim()
+ndarray.size()
+ndarray.shape()</div></code></pre><p><code>ndarray.ndim</code> akan memberi tahu kalian jumlah axes, atau dimensi, dari array.<br><br><code>ndarray.size</code> akan memberi tahu kalian jumlah total elemen array. Ini adalah produk dari elemen shape array.<br><br><code>ndarray.shape</code> akan menampilkan tuple integer yang menunjukkan jumlah elemen yang disimpan di sepanjang setiap dimensi array. Jika, misalnya, kalian memiliki larik 2D dengan 2 baris dan 3 kolom, maka bentuk larik Anda adalah (2,3).</p><pre class="hljs"><code><div>array_example = np.array([[[<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>],
+                           [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>]],
+
+                          [[<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>],
+                           [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>]],
+
+                          [[<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>],
+                           [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>]]])
+
+print(array_example)</div></code></pre><pre><code>[[[0 1 2 3]
+  [4 5 6 7]]
+
+ [[0 1 2 3]
+  [4 5 6 7]]
+
+ [[0 1 2 3]
+  [4 5 6 7]]]
+</code></pre><pre class="hljs"><code><div>array_example.ndim</div></code></pre><pre><code>3
+</code></pre><pre class="hljs"><code><div>array_example.size</div></code></pre><pre><code>24
+</code></pre><pre class="hljs"><code><div>array_example.shape</div></code></pre><pre><code>(3, 2, 4)
+</code></pre><pre class="hljs"><code><div>arr_one = np.array([[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]])</div></code></pre><pre class="hljs"><code><div>arr_one.ndim</div></code></pre><pre><code>2
+</code></pre><pre class="hljs"><code><div>arr_one.size</div></code></pre><pre><code>5
+</code></pre><pre class="hljs"><code><div>arr_one.shape</div></code></pre><pre><code>(1, 5)
+</code></pre><h3 id="reshape">Reshape</h3><pre class="hljs"><code><div>np.reshape()</div></code></pre><p>Menggunakan <code>np.reshape()</code> akan memberikan bentuk baru ke array tanpa mengubah datanya. Ingatlah bahwa ketika kalian menggunakan metode reshape, array yang ingin kalian hasilkan harus memiliki jumlah elemen yang sama dengan array asli. Jika kalian memulai dengan sebuah array dengan 12 elemen, kalian harus memastikan bahwa array baru kalian juga memiliki total 12 elemen.<br><br>Jika kalian mulai dengan array ini:</p><pre class="hljs"><code><div>a = np.arange(<span class="hljs-number">6</span>)
+
+print(a)</div></code></pre><pre><code>[0 1 2 3 4 5]
+</code></pre><p>You can use reshape() to reshape your array. For example, you can reshape this array to an array with three rows and two columns:</p><p>Kalian dapat menggunakan reshape() untuk membentuk kembali array kalian. Misalnya, kalian dapat membentuk kembali array ini menjadi array dengan tiga baris dan dua kolom:</p><pre class="hljs"><code><div>b = a.reshape(<span class="hljs-number">3</span>,<span class="hljs-number">2</span>)
+
+print(b)</div></code></pre><pre><code>[[0 1]
+ [2 3]
+ [4 5]]
+</code></pre><pre class="hljs"><code><div>a.reshape(<span class="hljs-number">6</span>,<span class="hljs-number">1</span>)</div></code></pre><pre><code>array([[0],
+       [1],
+       [2],
+       [3],
+       [4],
+       [5]])
+</code></pre><p><span lang="id"><span title="">Dengan np.reshape, kalian dapat menentukan beberapa parameter opsional:</span></span></p><p><code>numpy.reshape(a, newshape, order)</code></p><ul><li><strong>a</strong> adalah array yang akan di-reshaped.</li><li><strong>newshape&nbsp;</strong>adalah bentuk baru yang kalian inginkan. Kalian dapat menentukan integer atau tuple integer. Jika kalian menentukan bilangan bulat, hasilnya adalah array dengan panjang bilangan tersebut. Bentuknya harus sesuai dengan bentuk aslinya.</li><li><strong>order</strong>: ‘C’ means to read/write the elements using C-like index order, ‘F’ means to read/write the elements using Fortran-like index order, ‘A’ means to read/write the elements in Fortran-like index order if a is Fortran contiguous in memory, C-like order otherwise. (This is an optional parameter and doesn’t need to be specified.)</li><li><strong>order</strong>: 'C' berarti read/write elemen menggunakan C-like index order, 'F' berarti read/write elemen menggunakan Fortran-like index order, 'A' berarti read/write elemen dengan Fortran-like index order jika a adalah Fortran contiguous pada memory. (Ini adalah parameter opsional dan tidak perlu ditentukan.)</li></ul><h3 id="convert-1d-to-2d">Convert 1D to 2D</h3><pre class="hljs"><code><div>np.newaxis
+np.expand_dims</div></code></pre><p>Kalian dapat menggunakan <code>np.newaxis</code> dan <code>np.expand_dims</code> untuk meningkatkan dimensi array yang sudah ada.</p><p>Menggunakan <code>np.newaxis</code> akan meningkatkan dimensi array kalian sebesar satu dimensi bila digunakan sekali. Artinya array 1D akan menjadi array 2D, array 2D akan menjadi array 3D, dan seterusnya.</p><p>Misalnya, jika kalian memulai dengan array ini:</p><pre class="hljs"><code><div>a = np.array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>])
+a.shape</div></code></pre><pre><code>(6,)
+</code></pre><pre class="hljs"><code><div><span class="hljs-comment"># You can use np.newaxis to add a new axis:</span>
+
+a2 = a[np.newaxis]
+print(a2.shape)
+print(a2)</div></code></pre><pre><code>(1, 6)
+[[1 2 3 4 5 6]]
+</code></pre><pre class="hljs"><code><div><span class="hljs-comment"># You can convert a 1D array to a row vector by inserting an axis along the first dimension</span>
+
+row_vector = a[np.newaxis, :]
+print(row_vector.shape)
+print(row_vector)</div></code></pre><pre><code>(1, 6)
+[[1 2 3 4 5 6]]
+</code></pre><pre class="hljs"><code><div><span class="hljs-comment"># for a column vector, You can insert an axis along the second dimension</span>
+
+col_vector = a[:, np.newaxis]
+print(col_vector.shape)
+print(col_vector)</div></code></pre><pre><code>(6, 1)
+[[1]
+ [2]
+ [3]
+ [4]
+ [5]
+ [6]]
+</code></pre><p>Kalian juga dapat memperluas array dengan memasukkan axis baru pada posisi yang ditentukan dengan np.expand_dims.</p><p>Misalnya, jika kalian memulai dengan array ini:</p><pre class="hljs"><code><div>a = np.array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>])
+a.shape</div></code></pre><pre><code>(6,)
+</code></pre><pre class="hljs"><code><div><span class="hljs-comment"># You can use np.expand_dims to add an axis at index position 1 with:</span>
+
+b = np.expand_dims(a, axis=<span class="hljs-number">1</span>)
+b.shape</div></code></pre><pre><code>(6, 1)
+</code></pre><pre class="hljs"><code><div><span class="hljs-comment"># You can add an axis at index position 0 with:</span>
+
+c = np.expand_dims(a, axis=<span class="hljs-number">0</span>)
+c.shape</div></code></pre><pre><code>(1, 6)
+</code></pre><h3 id="indexing-and-slicing">Indexing and Slicing</h3><p>Kalian dapat mengindeks dan slice array NumPy dengan cara yang sama seperti kalian slice lists Python.</p><pre class="hljs"><code><div>data = np.array([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>])
+
+print(data)
+print(data[<span class="hljs-number">0</span>])
+print(data[<span class="hljs-number">1</span>])
+print(data[<span class="hljs-number">0</span>:<span class="hljs-number">2</span>])
+print(data[<span class="hljs-number">1</span>:])
+print(data[<span class="hljs-number">-2</span>:])</div></code></pre><pre><code>[1 2 3]
+1
+2
+[1 2]
+[2 3]
+[2 3]
+</code></pre><p>Kalian mungkin ingin mengambil bagian dari array atau elemen array tertentu untuk digunakan dalam analisis lebih lanjut atau operasi tambahan. Untuk melakukannya, kalian perlu membuat subset, memotong, dan / atau mengindeks array kalian.<br><br>Jika kalian ingin memilih nilai dari array kalian yang memenuhi kondisi tertentu, dapat dilakukan langsung dengan NumPy.<br><br>Misalnya, jika kalian memulai dengan array ini:</p><pre class="hljs"><code><div>a = np.array([[<span class="hljs-number">1</span> , <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>], [<span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>], [<span class="hljs-number">9</span>, <span class="hljs-number">10</span>, <span class="hljs-number">11</span>, <span class="hljs-number">12</span>]])
+a</div></code></pre><pre><code>array([[ 1,  2,  3,  4],
+       [ 5,  6,  7,  8],
+       [ 9, 10, 11, 12]])
+</code></pre><pre class="hljs"><code><div><span class="hljs-comment"># You can easily print all of the values in the array that are less than 5</span>
+
+print(a[a&gt;=<span class="hljs-number">5</span>])</div></code></pre><pre><code>[ 5  6  7  8  9 10 11 12]
+</code></pre><p>Kalian juga dapat memilih, misalnya, angka yang sama dengan atau lebih besar dari 5, dan menggunakan kondisi tersebut untuk mengindeks array.</p><pre class="hljs"><code><div>five_up = (a &gt;= <span class="hljs-number">5</span>)
+
+print(a[five_up])
+print(a[a&gt;=<span class="hljs-number">5</span>])</div></code></pre><pre><code>[ 5  6  7  8  9 10 11 12]
+[ 5  6  7  8  9 10 11 12]
+</code></pre><pre class="hljs"><code><div><span class="hljs-comment"># You can select elements that are divisible by 2</span>
+
+divisible_by_2 = a[a%<span class="hljs-number">2</span>==<span class="hljs-number">0</span>]
+
+print(divisible_by_2)</div></code></pre><pre><code>[ 2  4  6  8 10 12]
+</code></pre><pre class="hljs"><code><div><span class="hljs-comment"># you can select elements that satisfy two conditions using the &amp; and | operators</span>
+
+c = a[(a &gt; <span class="hljs-number">2</span>) &amp; (a &lt; <span class="hljs-number">11</span>)]
+
+print(c)</div></code></pre><pre><code>[ 3  4  5  6  7  8  9 10]
+</code></pre><h3 id="creating-array-from-existing-data">Creating Array from Existing Data</h3><pre class="hljs"><code><div>slicing indexing
+np.vstack()
+np.hstack()
+np.hsplit()
+.view()
+.copy()</div></code></pre><p>You can easily use create a new array from a section of an existing array. Let’s say you have this array:</p><p>Kalian dapat dengan mudah membuat array baru dari bagian array yang sudah ada. Misalkan kalian memiliki array ini:</p><p><code>array([ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])</code></p><p>Kalian dapat membuat array baru dari bagian array kalian kapan saja dengan menentukan di mana kalian ingin mengiris/slice array kalian.</p><pre class="hljs"><code><div>arr = np.array([ <span class="hljs-number">1</span>,  <span class="hljs-number">2</span>,  <span class="hljs-number">3</span>,  <span class="hljs-number">4</span>,  <span class="hljs-number">5</span>,  <span class="hljs-number">6</span>,  <span class="hljs-number">7</span>,  <span class="hljs-number">8</span>,  <span class="hljs-number">9</span>, <span class="hljs-number">10</span>])</div></code></pre><pre class="hljs"><code><div>arr1 = arr[<span class="hljs-number">3</span>:<span class="hljs-number">8</span>]
+arr1</div></code></pre><pre><code>array([4, 5, 6, 7, 8])
+</code></pre><p>kalian juga dapat menumpuk dua array yang ada, baik secara vertikal maupun horizontal. Misalkan kalian memiliki dua array:</p><p>a_1:</p><pre class="hljs"><code><div>array([[<span class="hljs-number">1</span>, <span class="hljs-number">1</span>],
+     [<span class="hljs-number">2</span>, <span class="hljs-number">2</span>]])</div></code></pre><p>and a_2:</p><pre class="hljs"><code><div>array([[<span class="hljs-number">3</span>, <span class="hljs-number">3</span>],
+     [<span class="hljs-number">4</span>, <span class="hljs-number">4</span>]])</div></code></pre><p>Kalian dapat menumpuk secara vertikal dengan <code>vstack</code></p><pre class="hljs"><code><div>a_1 = np.array([[<span class="hljs-number">1</span>, <span class="hljs-number">1</span>],
+                [<span class="hljs-number">2</span>, <span class="hljs-number">2</span>]])</div></code></pre><pre class="hljs"><code><div>a_2 = np.array([[<span class="hljs-number">3</span>, <span class="hljs-number">3</span>],
+                [<span class="hljs-number">4</span>, <span class="hljs-number">4</span>]])</div></code></pre><pre class="hljs"><code><div>np.vstack((a_1, a_2))</div></code></pre><pre><code>array([[1, 1],
+       [2, 2],
+       [3, 3],
+       [4, 4]])
+</code></pre><pre class="hljs"><code><div><span class="hljs-comment"># Or stack them horizontally with hstack</span>
+
+np.hstack((a_1, a_2))</div></code></pre><pre><code>array([[1, 1, 3, 3],
+       [2, 2, 4, 4]])
+</code></pre><p>Kalian dapat membagi sebuah array menjadi beberapa array yang lebih kecil menggunakan hsplit. Kalian dapat menentukan jumlah array yang bentuknya sama untuk dikembalikan atau kolom setelah pembagian dilakukan.<br><br>Misalkan kalian memiliki larik ini:</p><pre class="hljs"><code><div>array([[ <span class="hljs-number">1</span>,  <span class="hljs-number">2</span>,  <span class="hljs-number">3</span>,  <span class="hljs-number">4</span>,  <span class="hljs-number">5</span>,  <span class="hljs-number">6</span>,  <span class="hljs-number">7</span>,  <span class="hljs-number">8</span>,  <span class="hljs-number">9</span>, <span class="hljs-number">10</span>, <span class="hljs-number">11</span>, <span class="hljs-number">12</span>],
+     [<span class="hljs-number">13</span>, <span class="hljs-number">14</span>, <span class="hljs-number">15</span>, <span class="hljs-number">16</span>, <span class="hljs-number">17</span>, <span class="hljs-number">18</span>, <span class="hljs-number">19</span>, <span class="hljs-number">20</span>, <span class="hljs-number">21</span>, <span class="hljs-number">22</span>, <span class="hljs-number">23</span>, <span class="hljs-number">24</span>]])</div></code></pre><pre class="hljs"><code><div>arrsplit = np.array([[<span class="hljs-number">1</span>,  <span class="hljs-number">2</span>,  <span class="hljs-number">3</span>,  <span class="hljs-number">4</span>,  <span class="hljs-number">5</span>,  <span class="hljs-number">6</span>,  <span class="hljs-number">7</span>,  <span class="hljs-number">8</span>,  <span class="hljs-number">9</span>, <span class="hljs-number">10</span>, <span class="hljs-number">11</span>, <span class="hljs-number">12</span>],
+                     [<span class="hljs-number">13</span>, <span class="hljs-number">14</span>, <span class="hljs-number">15</span>, <span class="hljs-number">16</span>, <span class="hljs-number">17</span>, <span class="hljs-number">18</span>, <span class="hljs-number">19</span>, <span class="hljs-number">20</span>, <span class="hljs-number">21</span>, <span class="hljs-number">22</span>, <span class="hljs-number">23</span>, <span class="hljs-number">24</span>]])
+
+print(arrsplit)</div></code></pre><pre><code>[[ 1  2  3  4  5  6  7  8  9 10 11 12]
+ [13 14 15 16 17 18 19 20 21 22 23 24]]
+</code></pre><pre class="hljs"><code><div><span class="hljs-comment"># If you wanted to split this array into three equally shaped arrays</span>
+
+np.hsplit(arrsplit,<span class="hljs-number">3</span>)</div></code></pre><pre><code>[array([[ 1,  2,  3,  4],
+        [13, 14, 15, 16]]), array([[ 5,  6,  7,  8],
+        [17, 18, 19, 20]]), array([[ 9, 10, 11, 12],
+        [21, 22, 23, 24]])]
+</code></pre><p>Kalian dapat menggunakan metode view untuk membuat objek array baru yang terlihat sama dengan array asli (shallow copy)</p><pre class="hljs"><code><div>a = np.array([[<span class="hljs-number">1</span> , <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>], [<span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>], [<span class="hljs-number">9</span>, <span class="hljs-number">10</span>, <span class="hljs-number">11</span>, <span class="hljs-number">12</span>]])
+a</div></code></pre><pre><code>array([[ 1,  2,  3,  4],
+       [ 5,  6,  7,  8],
+       [ 9, 10, 11, 12]])
+</code></pre><pre class="hljs"><code><div><span class="hljs-comment"># You can create a new array object that looks at the same data</span>
+
+b = a.view()
+b</div></code></pre><pre><code>array([[ 1,  2,  3,  4],
+       [ 5,  6,  7,  8],
+       [ 9, 10, 11, 12]])
+</code></pre><pre class="hljs"><code><div><span class="hljs-comment"># Using the copy method will make a complete copy of the array and its data (a deep copy).</span>
+
+c = a.copy()
+c</div></code></pre><pre><code>array([[ 1,  2,  3,  4],
+       [ 5,  6,  7,  8],
+       [ 9, 10, 11, 12]])
+</code></pre><h3 id="basic-array-operations">Basic array operations</h3><p><code>Addition, subtraction, multiplication, division, and more</code></p><p>Setelah kalian membuat array, kalian dapat mulai bekerja dengan array tersebut. Katakanlah, misalnya, kalian telah membuat dua array, satu disebut "data" dan satu lagi disebut "ones".<br><br>Kalian dapat menambahkan array tersebut dengan tanda tambah.</p><p><code>data + ones</code></p><p>Kalian tentu saja dapat melakukan lebih dari sekadar penjumlahan.</p><pre class="hljs"><code><div>data - ones
+data * data
+data / data</div></code></pre><p>Operasi dasar sangat sederhana jika dilakukan dengan dengan NumPy. Jika kalian ingin menemukan hasil penjumlahan elemen dalam array, kalian dapat menggunakan sum(). Ini berfungsi untuk array1D, array2D, dan arraydalam dimensi yang lebih tinggi.</p><pre class="hljs"><code><div>a = np.array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
+
+<span class="hljs-comment"># Add all of the elements in the array</span>
+a.sum()</div></code></pre><pre><code>10</code></pre><p>Untuk menambahkan baris atau kolom dalam array 2D, kalian harus menentukan axis.<br><br>Jika kalian mulai dengan array ini:</p><pre class="hljs"><code><div>b = np.array([[<span class="hljs-number">1</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">2</span>, <span class="hljs-number">2</span>]])
+b</div></code></pre><pre><code>array([[1, 1],
+       [2, 2]])
+</code></pre><pre class="hljs"><code><div><span class="hljs-comment"># You can sum the rows</span>
+
+b.sum(axis=<span class="hljs-number">0</span>)</div></code></pre><pre><code>array([3, 3])
+</code></pre><pre class="hljs"><code><div><span class="hljs-comment"># You can sum the columns</span>
+
+b.sum(axis=<span class="hljs-number">1</span>)</div></code></pre><pre><code>array([2, 4])
+</code></pre><pre class="hljs"><code><div>data = np.array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>])
+data</div></code></pre><pre><code>array([1, 2])
+</code></pre><pre class="hljs"><code><div>ones = np.ones(<span class="hljs-number">2</span>)
+ones</div></code></pre><pre><code>array([1., 1.])
+</code></pre><pre class="hljs"><code><div>data + ones</div></code></pre><pre><code>array([2., 3.])
+</code></pre><pre class="hljs"><code><div>data * data</div></code></pre><pre><code>array([1, 4])
+</code></pre><pre class="hljs"><code><div>data / data</div></code></pre><pre><code>array([1., 1.])
+</code></pre><h3 id="broadcasting">Broadcasting</h3><p>Ada kalanya kalian mungkin ingin melakukan operasi antara array dan satu bilangan (juga disebut operasi antara vektor dan skalar) atau antara array dengan dua ukuran berbeda.<br><br>Misalnya, array kalian (kita menyebutnya "data") mungkin berisi informasi tentang jarak dalam mil tetapi Anda ingin mengonversi informasi menjadi kilometer. Kalian dapat melakukan operasi ini dengan:</p><p><code>data * 1.6</code></p><p><img src="./KODE by Hacktiv8_files/0_XnWhUUqTKsbRooBh.png" class="fr-fic fr-dii"></p><p>NumPy memahami bahwa perkalian harus dilakukan dengan setiap sel. Konsep tersebut disebut broadcasting.<br><br>Broadcasting adalah mekanisme yang memungkinkan NumPy melakukan operasi pada array dengan bentuk berbeda. Dimensi array kalian harus kompatibel, misalnya, jika dimensi kedua array sama atau salah satunya adalah 1. Jika dimensinya tidak kompatibel, kalian akan mendapatkan value error.</p><pre class="hljs"><code><div>data * <span class="hljs-number">2</span></div></code></pre><pre><code>array([2, 4])
+</code></pre><h3 id="more-array-operations">More Array Operations</h3><p><code>Maximum, minimum, sum, mean, product, standard deviation, and more</code></p><p>NumPy juga melakukan fungsi agregasi. Selain <code>min</code>, <code>max</code>, dan <code>sum</code>, kalian bisa dengan mudah menjalankan <code>mean</code> untuk mendapatkan rata-rata, <code>prod</code> untuk mendapatkan hasil perkalian elemen, <code>std</code> untuk mendapatkan standard deviation, dan banyak lagi.</p><pre class="hljs"><code><div>data.max()
+data.min()
+data.sum()</div></code></pre><pre class="hljs"><code><div>A = np.array([[<span class="hljs-number">0.45053314</span>, <span class="hljs-number">0.17296777</span>, <span class="hljs-number">0.34376245</span>, <span class="hljs-number">0.5510652</span>],
+              [<span class="hljs-number">0.54627315</span>, <span class="hljs-number">0.05093587</span>, <span class="hljs-number">0.40067661</span>, <span class="hljs-number">0.55645993</span>],
+              [<span class="hljs-number">0.12697628</span>, <span class="hljs-number">0.82485143</span>, <span class="hljs-number">0.26590556</span>, <span class="hljs-number">0.56917101</span>]])
+
+print(A)</div></code></pre><pre><code>[[0.45053314 0.17296777 0.34376245 0.5510652 ]
+ [0.54627315 0.05093587 0.40067661 0.55645993]
+ [0.12697628 0.82485143 0.26590556 0.56917101]]
+</code></pre><p>Sangat umum jika ingin menggabungkan sepanjang baris atau kolom. Secara default, setiap fungsi agregasi NumPy akan mengembalikan agregat dari seluruh array.</p><pre class="hljs"><code><div>A.sum()</div></code></pre><pre><code>4.8595784
+</code></pre><pre class="hljs"><code><div>A.min()</div></code></pre><pre><code>0.05093587
+</code></pre><pre class="hljs"><code><div>A.min(axis=<span class="hljs-number">0</span>)</div></code></pre><pre><code>array([0.12697628, 0.05093587, 0.26590556, 0.5510652 ])
+</code></pre><pre class="hljs"><code><div>A.max()</div></code></pre><pre><code>0.82485143
+</code></pre><pre class="hljs"><code><div>A.max(axis=<span class="hljs-number">1</span>)</div></code></pre><pre><code>array([0.5510652 , 0.55645993, 0.82485143])
+</code></pre><pre class="hljs"><code><div>A.std()</div></code></pre><pre><code>0.21392120766089617
+</code></pre><p>Empat nilai yang tercantum di atas sesuai dengan jumlah kolom dalam array kalian. Dengan array empat kolom, kalian akan mendapatkan empat nilai sebagai hasil kalian.</p><h2 id="matrices">Matrices</h2><p>Kalian dapat meneruskan lists of lists Python untuk membuat matriks untuk mewakilinya di NumPy.</p><h3 id="creating-matrices">Creating Matrices</h3><p><code>np.array([[1,2],[3,4]])</code></p><p>Kita juga dapat menggunakan metode yang sama yang kita sebutkan di atas (<code>ones()</code>, <code>zeros()</code>, dan <code>random.random()</code>) selama kita memberi mereka tuple yang menggambarkan dimensi matriks yang kita buat</p><pre class="hljs"><code><div>np.ones((<span class="hljs-number">3</span>,<span class="hljs-number">2</span>))
+np.zeros((<span class="hljs-number">3</span>,<span class="hljs-number">2</span>))
+np.random.random((<span class="hljs-number">3</span>,<span class="hljs-number">2</span>))</div></code></pre><pre class="hljs"><code><div>print(np.ones((<span class="hljs-number">3</span>,<span class="hljs-number">2</span>)))
+print(np.zeros((<span class="hljs-number">3</span>,<span class="hljs-number">2</span>)))
+print(np.random.random((<span class="hljs-number">3</span>,<span class="hljs-number">2</span>)))</div></code></pre><pre><code>[[1. 1.]
+ [1. 1.]
+ [1. 1.]]
+[[0. 0.]
+ [0. 0.]
+ [0. 0.]]
+[[0.3049133  0.8663413 ]
+ [0.04381859 0.10418812]
+ [0.14035396 0.79738828]]
+</code></pre><h3 id="matrix-arithmetic">Matrix Arithmetic</h3><p>Kita dapat menjumlahkan dan mengalikan matriks menggunakan operator aritmatika (+ - * /) jika kedua matriks tersebut berukuran sama. NumPy menanganinya sebagai position-wise operations.</p><pre class="hljs"><code><div>data = np.array([[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>], [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>]])
+print(data)</div></code></pre><pre><code>[[1 2]
+ [3 4]]
+</code></pre><pre class="hljs"><code><div>ones = np.ones([<span class="hljs-number">2</span>, <span class="hljs-number">2</span>])
+print(ones)</div></code></pre><pre><code>[[1. 1.]
+ [1. 1.]]
+</code></pre><pre class="hljs"><code><div>print(data + ones)</div></code></pre><pre><code>[[2. 3.]
+ [4. 5.]]
+</code></pre><pre class="hljs"><code><div>ones_row = np.ones([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>])
+print(ones_row)</div></code></pre><pre><code>[[1. 1.]]
+</code></pre><pre class="hljs"><code><div>print(data + ones_row)</div></code></pre><pre><code>[[2. 3.]
+ [4. 5.]]
+</code></pre><h3 id="dot-product">Dot Product</h3><p>NumPy memberi setiap matriks metode <code>dot()</code> yang dapat kita gunakan untuk menjalankan operasi dot product dengan matriks lain</p><pre class="hljs"><code><div>a_1 = np.array([[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]])
+print(a_1)
+print(a_1.shape)
+
+a_2 = np.array([[<span class="hljs-number">7</span>, <span class="hljs-number">8</span>], [<span class="hljs-number">9</span>, <span class="hljs-number">10</span>], [<span class="hljs-number">11</span>, <span class="hljs-number">12</span>]])
+print(a_2)
+print(a_2.shape)</div></code></pre><pre><code>[[1 2 3]
+ [4 5 6]]
+(2, 3)
+[[ 7  8]
+ [ 9 10]
+ [11 12]]
+(3, 2)
+</code></pre><pre class="hljs"><code><div>np.dot(a_1, a_2)</div></code></pre><pre><code>array([[ 58,  64],
+       [139, 154]])
+</code></pre><h3 id="matrix-indexing">Matrix Indexing</h3><p>Operasi Indexing dan slicing menjadi lebih berguna saat kita memanipulasi matriks</p><p><img src="./KODE by Hacktiv8_files/0_hF9CxFXzDO4thRhA.png" class="fr-fic fr-dii"></p><pre class="hljs"><code><div>data = np.array([[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>], [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>], [<span class="hljs-number">5</span>, <span class="hljs-number">6</span>]])
+
+print(data)
+print(data[<span class="hljs-number">0</span>])
+print(data[<span class="hljs-number">1</span>])
+print(data[<span class="hljs-number">2</span>])
+print(data[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>])
+print(data[<span class="hljs-number">1</span>:<span class="hljs-number">3</span>])
+print(data[<span class="hljs-number">0</span>:<span class="hljs-number">2</span>,<span class="hljs-number">1</span>])</div></code></pre><pre><code>[[1 2]
+ [3 4]
+ [5 6]]
+[1 2]
+[3 4]
+[5 6]
+2
+[[3 4]
+ [5 6]]
+[2 4]
+</code></pre><h3 id="matrix-aggregation">Matrix Aggregation</h3><p>Kita dapat menjumlahkan matriks dengan cara yang sama seperti kita menjumlahkan vektor</p><pre class="hljs"><code><div>print(data)</div></code></pre><pre><code>[[1 2]
+ [3 4]
+ [5 6]]
+</code></pre><pre class="hljs"><code><div>print(data.max())
+print(data.min())
+print(data.sum())</div></code></pre><pre><code>6
+1
+21
+</code></pre><pre class="hljs"><code><div>print(data.max(axis=<span class="hljs-number">0</span>))
+print(data.max(axis=<span class="hljs-number">1</span>))</div></code></pre><pre><code>[5 6]
+[2 4 6]
+</code></pre><h3 id="transposing-and-reshaping">Transposing and Reshaping</h3><p>Kebutuhan umum saat menangani matriks adalah kebutuhan untuk rotate. Hal ini sering terjadi ketika kita perlu melakukan dot product dari dua matriks dan perlu menyelaraskan dimensi mereka. Array NumPy memiliki properti yang disebut <code>T</code> untuk mendapatkan transpos dari sebuah matriks.</p><pre class="hljs"><code><div>print(data)</div></code></pre><pre><code>[[1 2]
+ [3 4]
+ [5 6]]
+</code></pre><pre class="hljs"><code><div>print(data.T)</div></code></pre><pre><code>[[1 3 5]
+ [2 4 6]]
+</code></pre><p>Dalam kasus penggunaan yang lebih lanjut, kalian mungkin perlu mengganti dimensi matriks tertentu. Ini sering terjadi dalam aplikasi machine learning di mana model tertentu mengharapkan bentuk tertentu untuk masukan yang berbeda dari kumpulan data kalian.<br><br>Metode <code>reshape()</code> NumPy berguna dalam kasus ini. Kalian hanya memberikan dimensi baru yang kkalian inginkan untuk matriks. Kalian dapat meneruskan -1 untuk dimensi dan NumPy dapat menyimpulkan dimensi yang benar berdasarkan matriks Anda</p><pre class="hljs"><code><div>data_col = np.array([[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>]]).T
+print(data_col)</div></code></pre><pre><code>[[1]
+ [2]
+ [3]
+ [4]
+ [5]
+ [6]]
+</code></pre><pre class="hljs"><code><div>data_col.reshape(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>)</div></code></pre><pre><code>array([[1, 2, 3],
+       [4, 5, 6]])
+</code></pre><pre class="hljs"><code><div>data_col.reshape(<span class="hljs-number">3</span>, <span class="hljs-number">2</span>)</div></code></pre><pre><code>array([[1, 2],
+       [3, 4],
+       [5, 6]])
+</code></pre><p>Kalian juga dapat menggunakan np.transpose untuk membalikkan atau mengubah axes array sesuai dengan nilai yang kalian tentukan. Jika kalian mulai dengan array ini</p><pre class="hljs"><code><div>arr = np.arange(<span class="hljs-number">6</span>).reshape((<span class="hljs-number">2</span>, <span class="hljs-number">3</span>))
+print(arr)</div></code></pre><pre><code>[[0 1 2]
+ [3 4 5]]
+</code></pre><h3 id="n-dimensional-array">N-Dimensional Array</h3><p>NumPy dapat melakukan semua yang telah kita sebutkan dalam berbagai dimensi. Struktur data pusatnya disebut ndarray (N-Dimensional Array) karena suatu alasan.</p><p><img src="./KODE by Hacktiv8_files/0_G1IZA6_mFl3m9wH0.png" class="fr-fic fr-dii"></p><pre class="hljs"><code><div>ndarr = np.array([[[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>], [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>]],
+                  [[<span class="hljs-number">5</span>, <span class="hljs-number">6</span>], [<span class="hljs-number">7</span>, <span class="hljs-number">8</span>]]])
+
+print(ndarr)</div></code></pre><pre><code>[[[1 2]
+  [3 4]]
+
+ [[5 6]
+  [7 8]]]
+</code></pre><p><span lang="id"><span title="">Dalam banyak hal, berurusan dengan dimensi baru hanyalah dengan menambahkan koma ke parameter fungsi NumPy</span></span></p><pre class="hljs"><code><div>print(np.ones((<span class="hljs-number">4</span>,<span class="hljs-number">3</span>,<span class="hljs-number">2</span>)))</div></code></pre><pre><code>[[[1. 1.]
+  [1. 1.]
+  [1. 1.]]
+
+ [[1. 1.]
+  [1. 1.]
+  [1. 1.]]
+
+ [[1. 1.]
+  [1. 1.]
+  [1. 1.]]
+
+ [[1. 1.]
+  [1. 1.]
+  [1. 1.]]]
+</code></pre><pre class="hljs"><code><div>print(np.zeros((<span class="hljs-number">4</span>,<span class="hljs-number">3</span>,<span class="hljs-number">2</span>)))</div></code></pre><pre><code>[[[0. 0.]
+  [0. 0.]
+  [0. 0.]]
+
+ [[0. 0.]
+  [0. 0.]
+  [0. 0.]]
+
+ [[0. 0.]
+  [0. 0.]
+  [0. 0.]]
+
+ [[0. 0.]
+  [0. 0.]
+  [0. 0.]]]
+</code></pre><pre class="hljs"><code><div>print(np.random.random((<span class="hljs-number">4</span>,<span class="hljs-number">3</span>,<span class="hljs-number">2</span>)))</div></code></pre><pre><code>[[[0.45201885 0.25507739]
+  [0.02477164 0.17010669]
+  [0.69006255 0.1713266 ]]
+
+ [[0.35385035 0.04451506]
+  [0.50994013 0.60939244]
+  [0.92069324 0.02749528]]
+
+ [[0.97898567 0.13900424]
+  [0.812637   0.61704724]
+  [0.63238692 0.37445401]]
+
+ [[0.74002131 0.84524312]
+  [0.38827023 0.81427932]
+  [0.45593606 0.66235195]]]
+</code></pre><h3 id="flatten-n-dimensional-array">Flatten N-Dimensional Array</h3><p>Ada dua cara populer untuk meratakan array: <code>.flatten()</code> dan<code>.ravel()</code>. Perbedaan utama antara keduanya adalah bahwa array baru yang dibuat menggunakan<code>ravel()</code> sebenarnya merupakan referensi ke array induk. Ini berarti bahwa setiap perubahan pada array baru akan memengaruhi array induk juga. Karena ravel tidak membuat salinan, ini menghemat memori.</p><pre class="hljs"><code><div>arrflat = np.array([[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>], [<span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>], [<span class="hljs-number">9</span>, <span class="hljs-number">10</span>, <span class="hljs-number">11</span>, <span class="hljs-number">12</span>]])
+
+print(arrflat)</div></code></pre><pre><code>[[ 1  2  3  4]
+ [ 5  6  7  8]
+ [ 9 10 11 12]]
+</code></pre><pre class="hljs"><code><div><span class="hljs-comment"># You can use flatten to flatten your array into a 1D array.</span>
+
+arrflat.flatten()</div></code></pre><pre><code>array([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12])
+</code></pre><h2 id="working-with-math-formulas">Working with Math Formulas</h2><p>Mengimplementasikan rumus matematika yang bekerja pada array adalah salah satu hal yang membuat NumPy sangat dihargai di komunitas ilmiah Python.</p><p>Misalnya, ini adalah rumus mean square error (rumus utama yang digunakan dalam supervised machine learning model yang menangani regresi):</p><p><img class="fr-dib" src="./KODE by Hacktiv8_files/1600859839788.jpg" style="width: 129px;"></p><p>Menerapkan rumus ini sederhana dan mudah di NumPy:</p><pre class="hljs"><code><div>error = (<span class="hljs-number">1</span>/n) * np.sum(np.square(observed - prediction))</div></code></pre><pre class="hljs"></pre></div>
+  </div>
+</div></div>
+</div>
+
+                </section>
+                    <footer id="course-player-footer" data-navigation="content" aria-label="Course content navigation" class="course-player__content-navigation _content-navigation_apmbd3 _no-audio_apmbd3">
+  <button class="brand-color__background brand-color__dynamic-text _button--default--small_142a8m _button--icon-right--small_142a8m" data-ember-action="" data-ember-action-1615="1615">
+    <div class="_content__wrapper_142a8m">
+<!---->  <div class="_content__container_142a8m">
+                <span>Lesson Selanjutnya</span>
+            <i aria-hidden="true" class="toga-icon toga-icon-arrow-right"></i>
+
+  </div>
+</div>
+
+  </button>
+          </footer>
+  <!---->
+
+              </div>
+            </div>
+
+</section>
+        </main>
+
+        <aside class="course-player__right-drawer _right-drawer_n1vbpj">
+          <div class="course-player__course-discussions _course-discussions_n1vbpj">
+            <!---->
+          </div>
+        </aside>
+
+      </div>
+<!---->  </div>
+
+<!---->
+<!---->
+<!----><div id="ember463" class="ember-notify-cn ember-notify-default ember-view"><!----></div>
+</div></div>
+<div id="push"></div>
+</div>
+<script src="./KODE by Hacktiv8_files/vendor-f1f4185f6f6a42779ce1d77901b79979.js"></script>
+<script src="./KODE by Hacktiv8_files/course-player-v2-4f911c629dbb39b06c3cb741fa8ec94d.js"></script>
+<script src="./KODE by Hacktiv8_files/kobayashi_optimized-8e093c62b5cfe1237de41d410f728a2a441f1b1cd2b24459768f51d69c5e9a2d.js"></script>
+<script src="./KODE by Hacktiv8_files/moment.min.js"></script>
+<script src="./KODE by Hacktiv8_files/jquery-ui.min.js"></script>
+<script src="./KODE by Hacktiv8_files/filestack.min.js"></script>
+<script>
+  $(function() { window.filestack = filestack.init('AJlfu1IB1Q9mpicgMdkVzz') });
+</script>
+
+
+<script>
+  var userId = 31790287;
+  var email = 'barokah.surya@work.bri.co.id';
+  var mixpanelPerson = {
+    $email: email,
+    $created: '2020-10-20 12:34:59 +0000',
+    $last_login: '2020-10-20 12:34:59 +0000',
+    $first_name: 'Surya',
+    $last_name: 'Barokah',
+    'sign_in_count': 2,
+    'admin': false,
+    'referral_code': '',
+    'tenant': 'KODE by Hacktiv8',
+    'subdomain': 'hacktiv8-ptp',
+    'Is Paying': 'false',
+    'Revenue': '0.0',
+    'Courses': ["Introduction to Python for Data Science"]
+  };
+  var personTraits = {
+    'email': email,
+    'createdAt': '2020-10-20T12:34:59+00:00',
+    'firstName': 'Surya',
+    'lastName': 'Barokah',
+    'name': 'Surya Barokah'
+  };
+  ThinkificAnalytics.identify_for_tenant(email, mixpanelPerson, personTraits);
+  ThinkificAnalytics.name_tag(email);
+</script>
+
+
+<div class="site-footer-code">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXTJ2BB');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXTJ2BB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</div>
+
+
+
+
+
+<script type="text/javascript" id="">(function(a){var h="https://instantfox.co/anywhere/",k="93a359c32d8649729d629561ea7a2d89f169ac2771bd4ef5b31ac567ae8cfb9a",l=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments)}},b=encodeURIComponent,f="SCRIPT",c=document,g=c.getElementsByTagName(f)[0],e="t\x3d"+b(c.title||"")+"\x26u\x3d"+b(c.location.href||"")+"\x26r\x3d"+b(c.referrer||""),m="text/javascript";window.Autopilot||(window.Autopilot=l);a.app&&(e="devmode\x3dtrue\x26"+e);var n=function(a,b){var d=c.createElement(f);
+d.src=a;d.type=m;d.async=b;g.parentNode.insertBefore(d,g)};a=function(){n(h+k+"?"+e,!0)};window.attachEvent?window.attachEvent("onload",a):window.addEventListener("load",a,!1)})({app:!0});</script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","325782605039499");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=325782605039499&amp;ev=PageView&amp;noscript=1"></noscript>
+<style id="wistia_18_style" type="text/css" class="wistia_injected_style">
+@font-face {
+font-family: 'WistiaPlayerOverpassNumbers';
+src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAARAQAABAAQRFNJRwAAAAEAAA7oAAAACEdQT1Ow+b/jAAAONAAAAKhHU1VCAAEAAAAADtwAAAAKT1MvMl1sVb8AAAe0AAAAYGNtYXAApwIpAAAIFAAAALJjdnQgAAAAAAAAClQAAAAEZnBnbUM+8IgAAAjIAAABCWdhc3AAGgAjAAAOJAAAABBnbHlmWNZE7QAAARwAAAXMaGVhZIS0XikAAAckAAAANmhoZWEF5gGwAAAHkAAAACRobXR4GNICwAAAB1wAAAA0bG9jYQi0CoYAAAcIAAAAHG1heHAAGQBKAAAG6AAAACBuYW1lGpIbcAAAClgAAAOPcG9zdAAPAKQAAA3oAAAAPHByZXBoUamTAAAJ1AAAAH8ACgBd/wYBmgLuAAMADwAVABkAIwApADUAOQA9AEgAAAUhESEHFTMVIxUzNSM1MzUHFTM1IzUHIzUzBxUzFSMVMzUzNQcVIxUzNQcVMzUzFSM1IxUzNQcVMzUHIzUzBxUzBxUzNSM3MzUBmv7DAT3yQUKmQkKmpkIiISFCQkJkQiGFpmQiIWQhpqamIWRkhUZGpmZGIPoD6EMhJSEhJSGBaCJGRiRhISUhRiE8QiJkejgXL1Bxca1xcVAvZyEvISEvIQAAAAIARv/0AiYCyAAVACUAAAQ3Njc2NTQmJyYjIgcGBwYVFBYXFjMmJyY1NDc2MzIXFhUUBwYjAY87MRgTGRo/flo7LxkTGRs9f1wqIR8pX1oqIR4pXgw9M1tJVkOAMnU9MV1IV0Z/MXQ/X0qCeUxmX0uBfEplAAAAAAEAKAAAAOUCvAAIAAATIwYGIxUzETPlLRBHOXdGArwwJyj9wwAAAAABAEcAAAISAsgAJAAAJSE2Nz4CNzY2NzY1NCYjIgcGBxc2MzIWFRQHBgcHBgYHBhUhAhL+fwszEjIhCDBDG0J0Z1c+OhE+HX9HUTMjUhMrOhhEActDPTARJRYFHjAcRFRbaisoQRxxSzs8NSM2DR0uHFJzAAEAMv/0AggCyAA0AAAENjc2NjU0Jic2NjU0JicmJiMiBwYHFzY3NjMyFhcWFRQGIyMVMzIWFRQHBiMiJicHFhcWMwFJViIiJT83Ki8fHBxMKlM7MRpBFR8rPBkvEidLPyUvS1EwLEg+TxpBGzM6YAwfGxxLK0RiFhdSMCdDGBcaLiZAGS4aJBEQIjk6RUBMQkIlIjxCG0spMAAAAAIAHgAAAiICvAAKAA0AACUzNSMRIwEVIRUzAxEjAbhqair+kAFURkb5vTwBw/4mJb0CQ/62AAAAAQBG//QCLgK8AC0AADYWFxYzMjY3NjY1NCYnJiYjIgYHNyE1IQMXNjc2MzIXFhYVFAYHBgYjIicmJwdTLh1ETjpfIyAiIx8fUy4tVCAoASz+nDk7FykzN0QuFBccGBlEJkIuKiQpPB8MHSkjIVUtMVMfHSEeHfQ//pUSGxIWMRc+IiE+GBgbFxUkMwACADz/9AIEAsgAIQA2AAAENjc2NjU0JicmJiMiBgc2Njc2Njc1BgYHBgYVFBYXFhYzEhcWFRQGBwYjIiYnJiY1NDY3NjYzAVFSHx8jIBwdTCo2UxoIMiUlWzFKhDExNh4dHlc4RS0rFxUsSCE7FRYZGBUVOyMMJB8gVTAnTh4fJCEfLFkoKDsPNxJaPz+RSjpjIyYpAYAtLUgiOhUuGBYVOyEjPBYVGAABACgAAAHLArwADAAANjc2NzUhFSEGBwYHM+ooN4L+XQFTdzMrAkamjsSWLjyXqIq3AAAAAwBG//QCEALIACMALwBCAAAABgcGBhUUFhcGBwYVFBYXFjMyNjc2NjU0Jic2NjU0JicmJiMCJjU0NjMyFhUUBiMCJyY1NDY3NjYzMhcWFhUUBwYjAQJJGxoeMCw1JCMiH0JiMFUfHyJEOS4vHhobSSk5RUc3N0dFOUQrLRYVFToiRC4UFi0rRALIHRkZQiQuThQTNTRCLE0cPCAcHE0sQmcVE04vJEIZGR3+0D8zOkVFOjM//pspK0gfOBYWGC4WOB9IKykAAAACADz/9AIEAsgAIAA0AAASBgcGBhUUFhcWFjMyNjcGBgcGBgcVNjY3NjY1NCYnJiMCJyY1NDc2MzIWFxYWFRQGBwYGI/RUICAkIBwbTCo3VRoGLCMkWDJKfy8uMhwbPG1NLSssLUchOxYWGBgVFTsjAsgjIB9WMClNHh4iIyEtXCgpPA83Elo/PpJKOWMlTv58Ly1IRC4vGRYWOyEjPBYWGQAAAAIAMv/yALAB4wALABcAABI2NTQmIyIGFRQWMxI2NTQmIyIGFRQWM4slJRoaJSUaGiUlGholJRoBZSYZGSYmGRkm/o0mGRkmJhkZJgABAAAADQBJAAoAAAAAAAEAAAAAAAEAAAAAAAAAAAAAAAAAYgBiAJ4AsgDsAToBVgGcAfACCgJuAsAC5gABAAAAARmZfAtXkV8PPPUAAwPoAAAAAE2yzjUAAAAA1Z4zgwAe/wYCLgLuAAAABwACAAAAAAAAAfQAXQAAAAACbABGAU4AKAJYAEcCTgAyAksAHgJ0AEYCSgA8AfMAKAJWAEYCSgA8AOIAMgABAAADtv8GAAACdAAAACgCLgABAAAAAAAAAAAAAAAAAAAADQADAhYBkAAFAAgCigJYAAAASwKKAlgAAAFeABQBMgAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABERUxWAEAAIAA6Au7/BgEKA7YA+gAAAAEAAAAAAf8CvAAAACAAAgAAAAMAAAADAAAAigABAAAAAAAcAAMAAQAAAIoABgBuAAAACQAyAAEAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAwAEAAUABgAHAAgACQAKAAsADAAEACgAAAAGAAQAAQACACAAOv//AAAAIAAw////4f/SAAEAAAAAAAAAALAALEAOBQYHDQYJFA4TCxIIERBDsAEVRrAJQ0ZhZEJDRUJDRUJDRUJDRrAMQ0ZhZLASQ2FpQkNGsBBDRmFksBRDYWlCQ7BAUHmxBkBCsQUHQ7BAUHmxB0BCsxAFBRJDsBNDYLAUQ2CwBkNgsAdDYLAgYUJDsBFDUrAHQ7BGUlp5swUFBwdDsEBhQkOwQGFCsRAFQ7ARQ1KwBkOwRlJaebMFBQYGQ7BAYUJDsEBhQrEJBUOwEUNSsBJDsEZSWnmxEhJDsEBhQrEIBUOwEUOwQGFQebIGQAZDYEKzDQ8MCkOwEkOyAQEJQxAUEzpDsAZDsApDEDpDsBRDZbAQQxA6Q7AHQ2WwD0MQOi0AAACxAAAAQrE7AEOwAFB5uP+/QBAAAQAAAwQBAAABAAAEAgIAQ0VCQ2lCQ7AEQ0RDYEJDRUJDsAFDsAJDYWpgQkOwA0NEQ2BCHLEtAEOwAVB5swcFBQBDRUJDsF1QebIJBUBCHLIFCgVDYGlCuP/NswABAABDsAVDRENgQhy4LQAdAAAAAAAAAAASAN4AAQAAAAAAAQAWAAAAAQAAAAAAAgAFABYAAQAAAAAAAwAnABsAAQAAAAAABAAcAEIAAQAAAAAABQAPAF4AAQAAAAAABgAcAG0AAQAAAAAACQAgAIkAAQAAAAAACgA4AKkAAwABBAkAAQA4AOEAAwABBAkAAgAOARkAAwABBAkAAwBOAScAAwABBAkABAA4AXUAAwABBAkABQAeAa0AAwABBAkABgA4AXUAAwABBAkACQBAAcsAAwABBAkACgBwAgsAAwABBAkAEAAsAnsAAwABBAkAEQAKAqdXaXN0aWEtUGxheWVyLU92ZXJwYXNzTGlnaHQxLjEwMDtERUxWO1dpc3RpYS1QbGF5ZXItT3ZlcnBhc3MtTGlnaHRXaXN0aWEtUGxheWVyLU92ZXJwYXNzIExpZ2h0VmVyc2lvbiAxLjAzMTAwV2lzdGlhLVBsYXllci1PdmVycGFzcy1MaWdodERlbHZlIFdpdGhyaW5ndG9uLCBUaG9tYXMgSm9ja2luQ29weXJpZ2h0IChjKSAyMDE0IGJ5IFJlZCBIYXQsIEluYy4gQWxsIHJpZ2h0cyByZXNlcnZlZC4AVwBpAHMAdABpAGEALQBQAGwAYQB5AGUAcgAtAE8AdgBlAHIAcABhAHMAcwAgAEwAaQBnAGgAdABSAGUAZwB1AGwAYQByADEALgAxADAAMAA7AEQARQBMAFYAOwBXAGkAcwB0AGkAYQAtAFAAbABhAHkAZQByAC0ATwB2AGUAcgBwAGEAcwBzAC0ATABpAGcAaAB0AFcAaQBzAHQAaQBhAC0AUABsAGEAeQBlAHIALQBPAHYAZQByAHAAYQBzAHMALQBMAGkAZwBoAHQAVgBlAHIAcwBpAG8AbgAgADEALgAwADMAMQAwADAARABlAGwAdgBlACAAVwBpAHQAaAByAGkAbgBnAHQAbwBuACwAIABUAGgAbwBtAGEAcwAgAEoAbwBjAGsAaQBuAEMAbwBwAHkAcgBpAGcAaAB0ACAAKABjACkAIAAyADAAMQA0ACAAYgB5ACAAUgBlAGQAIABIAGEAdAAsACAASQBuAGMALgAgAEEAbABsACAAcgBpAGcAaAB0AHMAIAByAGUAcwBlAHIAdgBlAGQALgBXAGkAcwB0AGkAYQAtAFAAbABhAHkAZQByAC0ATwB2AGUAcgBwAGEAcwBzAEwAaQBnAGgAdAAAAgAAAAAAAP+FABQAAAAAAAAAAAAAAAAAAAAAAAAAAAANAAAAAwATABQAFQAWABcAGAAZABoAGwAcAB0AAQADAAcACgATAAf//wAPAAEAAAAKAB4ALAABREZMVAAIAAQAAAAA//8AAQAAAAFrZXJuAAgAAAABAAAAAQAEAAIAAAABAAgAAQBmAAQAAAAIABoAIAAmADAAOgBIAFIAYAABAAb/7AABAAb/9gACAAn/9gAL//EAAgAJ//YAC//xAAMABP/7AAn/9gAL//YAAgAJ/+wAC//dAAMABv+6AAj/4gAJACMAAQAJ//YAAgABAAMACgAAAAEAAAAAAAAAAAAAAAAAAQAAAAA=);
+}
+</style><style id="wistia_24_style" type="text/css" class="wistia_injected_style">
+@font-face {
+font-family: 'WistiaPlayerInterNumbersSemiBold';
+font-feature-settings: 'tnum' 1;
+src: url(data:application/x-font-woff;charset=utf-8;base64,d09GMk9UVE8AAAaMAAwAAAAACgAAAAZBAAMD1wAAAAAAAAAAAAAAAAAAAAAAAAAADYpwGhQbIBwqBmAAgTIBNgIkAzAEBgWDGgcgGykJEZWkARP8KHCbm2tEznyIN98tPTUk9Ig3oiVV3pbDIzXa+f/fZgXpALFTZhBoMVFC9cp036dXvRKVmVnsxe+D+1NDQI5lG7ikZWEINIElTeBIdnxlhauQ5GQtoLHA/wN0riVdSx5xgbxF3KTbgnjVQ4B9P7YqCx7FpEZK+6ilx0AoopUh4aExJEKmkU+0ncdr4iFfKhdSFD9y91LCRaxNbVqvi0dND3rxI7ndUDR7EiwT3bhiua9krFA0oepCy2hCjwmjnjDjKjNTDz2ZuHtN8820Wfw/l8u4w4yV/f8/6uscs5rmiN00LcP4hAofyZUSyS3WinX0RGFFtnGrjj36x6dlNa57+PLTlrUisH2n9orfgd+R34XfDd0NsWDXwfwhvKHpbs3UBni37dBlPvO4KYn/PgylilcgSdw6sjsSSxsRGfIJgqhi14bKZCHcQvjUh/+3HMotTYrGLVYCxyMFjEnYC98yTAp6atAKVxaZ9eu2NMji8WTj4w/Y34elD60PPwb5bEywLqAX/amwmUo6TBCy14N/TL44jb3sE5JdUIPXXI0RBSoGt3BUObn4agKGIxxQhlyQacbstK4fS2mZoBtFNQ1bd+4zND2vQu6anl7gWFOj8MV2DVMtU44xMhpwElrrjA7zO5IqWojd/v1Vso6cqp91zC2YrGhDOy07Iqyza2q9smDIwUYek0AWbCt/8x78QmrzayQ6xtpmqfCYsLfgU9HdeP3UqutZTTNd/9Q8k08XzXzIxSdvLPda8YaeeZnkxUwql0nDKyUYdaWZjGAy7UDLHpVqBVHTxSV0wBy21El9u/491ik2J3YkdiP2LPZL41RBeeNUWtp97Bbn0Ee1g9wr9qqV/X+4R9nlPX03743dylnaXZyNp8v58yLOsFYCbUnCVQzjN+5QhlmKccO7aMkueWJggROd4qnw2x5LydUcg/NRamE3XMlkGovpRWPKWEavP74P2O1RANM/3gIIPJj7TX+lqU2geQuaBx4B/7cWAOx0ucTiEHYJU9y5DBuUMYNIHeHZz9tn+Fw2G5EBTqUlHRfRi4eB5wNlJsRsv5k4b6HyFkhIC6BO4LzPbWhW7rbCcxubeKHOc6UaBKZBMMd4j8XuRUynOCCa4EMfF9grkI1NcTaSAVtk1nrIOwFfeEBlQw4f4phb6zHzBOm0ZZ0dBcaZRVdYIo5xYiyOMEWONwQHmjKGE//VuRBgul1QrpyxmMvF4vGj0xfuuQrNt4tVTsRhEnjY9AuKa1FVLSEneQWzFd5WbO7hasX08ONUOVQgwQuVqACFXkSoIoUgK1hJEkAgbkG5CjqBS5wrRFuY2IfVwhRnLsVyZTZpatveGR4yEbYqbE6J80nM4aa+LD7Oqmr8PdSJFUQVynmgN4lerGQV1+uLdYzdOFWHPW/iK2gIQayhizQ0NMwyvBEBlrDczRfmU40CTtAHqLQGnjQG8MYkxm1MwJuTqjHwVCu9iRJ1C8ojWGHxUYowH0c5X57zpXquvlw0wzHHGMTfufxiJ1psFJTzq6nGeDvHF4LgmHHWCUViZBaInRn+cswnBi460RBPRYg9TRUQ0CZUC5LAT0qLLu50FpdTeBhjGf7/h4dg9hE0uqsBx/saOcYRDIfnOhfzGFBHyizcJK3p2edUjWrC0rn1aGjXtfVUCHMAKKhlxV8eTEIcV2jCOdKiqahv/MisrfRQVnxPJoOU62mR6pu2ZllIzo8zOZqQB7kWJXW2/c0aihata5PcIVJKfFRgHAETmEQVTCELptGMGcyigTnMJ1voUVN6uCZS9pV2hrwl7FYMvBwtUSd7L7E5qP9t7BIPRF7EcmA9ct2nIPHrxgWajtDltbXuBLuaY6qRZGa5ZlX5anfR0lYXaHUzVSFjZa8rfdhZ8rKXFZg21LVL5LFjI5TlDIbwnFGHE2dypHs6Q50N015dpOgLONEUlOqoiQgIaeCsjMq9gITDKwRMieQgKUy9UQY1BTFYZU2KpE2SkILMIjW8IdFwIKmMaK8oClJVssAEtFnz5dQ1s+w6EZoNGtPGQfzx+aoE8ikiP8GCYOWtgB+HBdWDaxACAZInVq14dZI85RRDvZGIghyONw59KV/BBEQ02P1ER8hmNGiURT2hQP8WfAY=);
+}
+</style></body></html>
