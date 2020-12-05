@@ -1,9 +1,9 @@
 @font-face {
   font-family: "toga-product-icons";
   font-display: block;
-  src: url("toga-product-icons.eot?d551bcb37518a04faa3baf891fe2814b?#iefix") format("embedded-opentype"),
-url("toga-product-icons.woff2?d551bcb37518a04faa3baf891fe2814b") format("woff2"),
-url("toga-product-icons.woff?d551bcb37518a04faa3baf891fe2814b") format("woff");
+  src: url("toga-product-icons.eot?236af41f6375615b96183b9cfa74270d?#iefix") format("embedded-opentype"),
+url("toga-product-icons.woff2?236af41f6375615b96183b9cfa74270d") format("woff2"),
+url("toga-product-icons.woff?236af41f6375615b96183b9cfa74270d") format("woff");
 }
 
 .toga-product-icon {
@@ -93,36 +93,39 @@ url("toga-product-icons.woff?d551bcb37518a04faa3baf891fe2814b") format("woff");
 .toga-product-icon-page:before {
   content: "\f116";
 }
-.toga-product-icon-play:before {
+.toga-product-icon-payouts:before {
   content: "\f117";
 }
-.toga-product-icon-pre-sell:before {
+.toga-product-icon-play:before {
   content: "\f118";
 }
-.toga-product-icon-preview:before {
+.toga-product-icon-pre-sell:before {
   content: "\f119";
 }
-.toga-product-icon-resource-library:before {
+.toga-product-icon-preview:before {
   content: "\f11a";
 }
-.toga-product-icon-search-initial:before {
+.toga-product-icon-resource-library:before {
   content: "\f11b";
 }
-.toga-product-icon-search-no-result:before {
+.toga-product-icon-search-initial:before {
   content: "\f11c";
 }
-.toga-product-icon-settings:before {
+.toga-product-icon-search-no-result:before {
   content: "\f11d";
 }
-.toga-product-icon-students:before {
+.toga-product-icon-settings:before {
   content: "\f11e";
 }
-.toga-product-icon-updates:before {
+.toga-product-icon-students:before {
   content: "\f11f";
 }
-.toga-product-icon-upgrade:before {
+.toga-product-icon-updates:before {
   content: "\f120";
 }
-.toga-product-icon-webinar-replay:before {
+.toga-product-icon-upgrade:before {
   content: "\f121";
+}
+.toga-product-icon-webinar-replay:before {
+  content: "\f122";
 }
