@@ -1,9 +1,9 @@
 @font-face {
   font-family: "toga-product-icons";
   font-display: block;
-  src: url("toga-product-icons.eot?236af41f6375615b96183b9cfa74270d?#iefix") format("embedded-opentype"),
-url("toga-product-icons.woff2?236af41f6375615b96183b9cfa74270d") format("woff2"),
-url("toga-product-icons.woff?236af41f6375615b96183b9cfa74270d") format("woff");
+  src: url("toga-product-icons.eot?ae53f31583492d8f8f1e312272b51f60?#iefix") format("embedded-opentype"),
+url("toga-product-icons.woff2?ae53f31583492d8f8f1e312272b51f60") format("woff2"),
+url("toga-product-icons.woff?ae53f31583492d8f8f1e312272b51f60") format("woff");
 }
 
 .toga-product-icon {
@@ -30,102 +30,105 @@ url("toga-product-icons.woff?236af41f6375615b96183b9cfa74270d") format("woff");
 .toga-product-icon-account:before {
   content: "\f101";
 }
-.toga-product-icon-blank:before {
+.toga-product-icon-apps:before {
   content: "\f102";
 }
-.toga-product-icon-blog:before {
+.toga-product-icon-blank:before {
   content: "\f103";
 }
-.toga-product-icon-book:before {
+.toga-product-icon-blog:before {
   content: "\f104";
 }
-.toga-product-icon-certificate:before {
+.toga-product-icon-book:before {
   content: "\f105";
 }
-.toga-product-icon-checkmark-multicolor:before {
+.toga-product-icon-certificate:before {
   content: "\f106";
 }
-.toga-product-icon-checkmark:before {
+.toga-product-icon-checkmark-multicolor:before {
   content: "\f107";
 }
-.toga-product-icon-clipboard:before {
+.toga-product-icon-checkmark:before {
   content: "\f108";
 }
-.toga-product-icon-clock-small:before {
+.toga-product-icon-clipboard:before {
   content: "\f109";
 }
-.toga-product-icon-design:before {
+.toga-product-icon-clock-small:before {
   content: "\f10a";
 }
-.toga-product-icon-digital-download:before {
+.toga-product-icon-design:before {
   content: "\f10b";
 }
-.toga-product-icon-feature-afterpurchase:before {
+.toga-product-icon-digital-download:before {
   content: "\f10c";
 }
-.toga-product-icon-flagship:before {
+.toga-product-icon-feature-afterpurchase:before {
   content: "\f10d";
 }
-.toga-product-icon-gift:before {
+.toga-product-icon-flagship:before {
   content: "\f10e";
 }
-.toga-product-icon-handshake:before {
+.toga-product-icon-gift:before {
   content: "\f10f";
 }
-.toga-product-icon-help:before {
+.toga-product-icon-handshake:before {
   content: "\f110";
 }
-.toga-product-icon-logout:before {
+.toga-product-icon-help:before {
   content: "\f111";
 }
-.toga-product-icon-manage:before {
+.toga-product-icon-logout:before {
   content: "\f112";
 }
-.toga-product-icon-market-sell:before {
+.toga-product-icon-manage:before {
   content: "\f113";
 }
-.toga-product-icon-microphone:before {
+.toga-product-icon-market-sell:before {
   content: "\f114";
 }
-.toga-product-icon-mini-course:before {
+.toga-product-icon-microphone:before {
   content: "\f115";
 }
-.toga-product-icon-page:before {
+.toga-product-icon-mini-course:before {
   content: "\f116";
 }
-.toga-product-icon-payouts:before {
+.toga-product-icon-page:before {
   content: "\f117";
 }
-.toga-product-icon-play:before {
+.toga-product-icon-payouts:before {
   content: "\f118";
 }
-.toga-product-icon-pre-sell:before {
+.toga-product-icon-play:before {
   content: "\f119";
 }
-.toga-product-icon-preview:before {
+.toga-product-icon-pre-sell:before {
   content: "\f11a";
 }
-.toga-product-icon-resource-library:before {
+.toga-product-icon-preview:before {
   content: "\f11b";
 }
-.toga-product-icon-search-initial:before {
+.toga-product-icon-resource-library:before {
   content: "\f11c";
 }
-.toga-product-icon-search-no-result:before {
+.toga-product-icon-search-initial:before {
   content: "\f11d";
 }
-.toga-product-icon-settings:before {
+.toga-product-icon-search-no-result:before {
   content: "\f11e";
 }
-.toga-product-icon-students:before {
+.toga-product-icon-settings:before {
   content: "\f11f";
 }
-.toga-product-icon-updates:before {
+.toga-product-icon-students:before {
   content: "\f120";
 }
-.toga-product-icon-upgrade:before {
+.toga-product-icon-updates:before {
   content: "\f121";
 }
-.toga-product-icon-webinar-replay:before {
+.toga-product-icon-upgrade:before {
   content: "\f122";
+}
+.toga-product-icon-webinar-replay:before {
+  content: "\f123";
 }
